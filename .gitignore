@@ -1,0 +1,18 @@
+node_modules/
+dist/
+dev-dist/
+*.local
+.DS_Store
+.env*
+!.env.example
+.assetpack/
+
+# 作者の環境の全体 ignore が *.jpg と *.png を無視するので、ゲームの素材だけ戻す。無いと clone から build できない
+!src/assets/**/*.jpg
+!src/assets/**/*.png
+!public/*.png
+# AssetPack の出力。src/assets から build のたびに作る
+public/assets/
+# itch.io の配布物（npm run build:itch）
+dist-itch/
+erabu-itch.zip

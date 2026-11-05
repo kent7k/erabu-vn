@@ -1,0 +1,4920 @@
+{
+  "$schema": "https://pixi-vn.com/schemas/1.15.0/schema.json",
+  "labels": {
+    "start": [
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "bundle",
+            "operationType": "lazyload",
+            "aliases": [
+              "senpai"
+            ],
+            "$origin": "lazyload bundle senpai"
+          }
+        ]
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "image",
+            "operationType": "show",
+            "alias": "bg",
+            "url": "bg_hallway",
+            "$origin": "show image bg bg_hallway"
+          }
+        ]
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "sound",
+            "operationType": "play",
+            "alias": "bgm_day",
+            "url": "bgm_day",
+            "props": {
+              "channel": "bgm",
+              "loop": true
+            },
+            "$origin": "play sound bgm_day channel bgm loop true"
+          }
+        ]
+      },
+      {
+        "dialogue": "二月の放課後は、音が少ない。"
+      },
+      {
+        "dialogue": "三年生の自由登校が始まって、上の階から足音が降りてこなくなった。"
+      },
+      {
+        "dialogue": "部活の声も、冬は窓を閉めているから届かない。"
+      },
+      {
+        "dialogue": "廊下の掲示板の前に立つのは、今日で四日目だった。"
+      },
+      {
+        "dialogue": "生徒会のお知らせ。インフルエンザの注意。去年の写真コンクールの入選作。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "image",
+            "operationType": "show",
+            "alias": "bg",
+            "url": "bg_board_two",
+            "transition": {
+              "type": "fade"
+            },
+            "$origin": "show image bg bg_board_two with fade"
+          }
+        ]
+      },
+      {
+        "dialogue": "その端に、紙が二枚、並んで留めてある。"
+      },
+      {
+        "dialogue": "左の紙には「部誌に書く人」。"
+      },
+      {
+        "dialogue": "右の紙には「読書会で読む人」。"
+      },
+      {
+        "dialogue": "どちらも同じ字で、同じ幅の下線が引いてあって、下線の上は空いている。"
+      },
+      {
+        "dialogue": "紙のあいだの画鋲から、紐で鉛筆が一本、吊るしてあった。"
+      },
+      {
+        "dialogue": "紐はちょうど、どちらの紙にも届く長さだった。"
+      },
+      {
+        "dialogue": "いちばん下に小さく、「締切 二月七日 十七時」。"
+      },
+      {
+        "dialogue": "今日だ。"
+      },
+      {
+        "dialogue": "名前を書く前の紙は、どちらも同じ白さをしていた。"
+      },
+      {
+        "dialogue": "そう思って、少しだけ、いい一行だと思った。"
+      },
+      {
+        "dialogue": "書き留めはしなかった。スマホを出すほどのことでもない気がして、思っただけで終わりにした。"
+      },
+      {
+        "dialogue": "わたしの書き出しは、だいたいいつもそうやって終わる。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "image",
+            "operationType": "show",
+            "alias": "bg",
+            "url": "bg_hallway",
+            "transition": {
+              "type": "fade"
+            },
+            "$origin": "show image bg bg_hallway with fade"
+          }
+        ]
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_neutral"
+            ],
+            "transition": {
+              "type": "movein",
+              "props": {
+                "direction": "right",
+                "ease": "circInOut",
+                "type": "spring"
+              }
+            },
+            "props": {
+              "xAlign": 0.5,
+              "yAlign": 1
+            },
+            "$origin": "show imagecontainer senpai [senpai_neutral] xAlign 0.5 yAlign 1 with movein direction right ease circInOut type spring"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "四日目だね。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "数えないでください。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_smile"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_smile]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "数えるよ。貼ったの、わたしだもん。ほかに見てくれる人もいないし。"
+        }
+      },
+      {
+        "dialogue": "文芸部の部長で、三年生。本当はもう学校に来なくていいはずの人だ。"
+      },
+      {
+        "dialogue": "春の行き先が秋のうちに決まってからも、週に三日は部室にいる。"
+      },
+      {
+        "dialogue": "暖房があるからだと本人は言うけれど、部室にあるのは、足を片方ずつしか温めない電気ストーブが一台だけだ。"
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "で、今日はどう。右？ 左？"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "どっちも、やりたいんです。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "うん、知ってる。昨日も聞いた。おとといも聞いた。"
+        }
+      },
+      {
+        "dialogue": "文芸部の部員は、二人いる。三年の先輩と、二年のわたし。"
+      },
+      {
+        "dialogue": "去年の夏までは五人いて、部室の椅子が足りなかった。今は椅子が三つ余っている。"
+      },
+      {
+        "dialogue": "部員が三人を切った部は、年度末の行事を一つしか申請できない。"
+      },
+      {
+        "dialogue": "生徒会の規定だ。去年の秋の予算の見直しで、そう決まったらしい。"
+      },
+      {
+        "dialogue": "文芸部は毎年三月に、二つのことをしてきた。"
+      },
+      {
+        "dialogue": "卒業する部員の文章を載せる「卒業号」の部誌と、卒業する部員を送る読書会。"
+      },
+      {
+        "dialogue": "部誌は次で三十二号になる。読書会は二十六回目になる。"
+      },
+      {
+        "dialogue": "どちらかが、今年で途切れる。"
+      },
+      {
+        "dialogue": "そしてたぶん、もう戻らない。来年の部員は、今のところわたし一人だからだ。"
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "部にとっては、どっちがいいんですか。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_grin"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_grin]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "おっ、今日は攻め方を変えてきたね。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_neutral"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_neutral]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "部誌は残るよ。図書室にも入る。ただし去年は四十部刷って、はけたのが十二部。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "読書会は何も残らない。ノートが一冊増えるだけ。でも去年は五人来て、一人泣いた。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "誰がですか。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "わたし。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_grin"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_grin]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "十二部と、一人泣いたの、どっちが多いと思う？"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "比べられないです、それ。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "うん。だから困るよね。"
+        }
+      },
+      {
+        "dialogue": "廊下の向こうから、腕章をつけた男子が歩いてきた。生徒会の会計の一年生だ。"
+      },
+      {
+        "dialogue": "クリップボードを持って、掲示板を一枚ずつ確かめて回っている。"
+      },
+      {
+        "dialogue": {
+          "character": "kaikei",
+          "text": "文芸部さん、今日の五時ですからね。"
+        }
+      },
+      {
+        "dialogue": "彼は二枚の紙の下線を見て、一度だけまばたきをした。"
+      },
+      {
+        "dialogue": {
+          "character": "kaikei",
+          "text": "両方まだ空いてますけど、大丈夫ですか。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "大丈夫じゃないよ。ありがとう。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "もし、決まらなかったら、どうなるんですか。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "kaikei",
+          "text": "申請なしなので、どっちもなしです。規定上は。"
+        }
+      },
+      {
+        "dialogue": "悪い人ではない。規定を読める人というだけだ。"
+      },
+      {
+        "dialogue": {
+          "character": "kaikei",
+          "text": "部誌、図書室で読みました。去年のやつの、三つ目の話がよかったです。"
+        }
+      },
+      {
+        "dialogue": "彼は小さく頭を下げて、次の掲示板へ歩いていった。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_grin"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_grin]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "ほら。十二部のほかにも、読んでる人がいる。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "部員に誘えばよかったのに。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "生徒会は兼部できないの。規定で。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "先輩が決めてくれたら、わたし、ちゃんとやりますよ。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_concern"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_concern]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "だから決めないの。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "わたしは三月に出ていく人で、きみは残る人でしょ。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "途切れた方の棚を見ながら来年を過ごすのは、きみだから。"
+        }
+      },
+      {
+        "dialogue": "そう言われると、何も返せなくなる。四日間、毎回ここで返せなくなっている。"
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "……この紙、なんで掲示板に貼ったんですか。部員、わたししかいないのに。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_smile"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_smile]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "規定に書いてあるの。「担当者を部内外に公募のうえ」って。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "形式だけどね。せっかくだから、ちゃんと貼ってみた。鉛筆もつけて。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "知らない一年生がふらっと名前を書いてくれたら、面白いなと思って。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "来ましたか、一年生。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "きみが四日来た。"
+        }
+      },
+      {
+        "dialogue": "わたしは鉛筆を見た。紐の先で、ほとんど動かずに下がっている。"
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "両方に書いちゃ、だめなんですか。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "鉛筆、どっちにも届きますよ。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "届くように吊ったからね。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_concern"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_concern]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "両方に名前は書けないよ。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "書けますよ。物理的には。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "物理的にはね。"
+        }
+      },
+      {
+        "dialogue": "先輩は、笑ったまま少しだけ黙った。"
+      },
+      {
+        "dialogue": "廊下の時計は、四時十分を指している。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_smile"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_smile]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "部室、行こうか。お茶いれるよ。締め切りまで、まだ五十分ある。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "五十分あれば、話が一個できる。"
+        }
+      },
+      {
+        "labelToOpen": {
+          "label": "common_room",
+          "type": "jump"
+        }
+      }
+    ],
+    "common_room": [
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "remove",
+            "alias": "senpai",
+            "$origin": "remove imagecontainer senpai"
+          }
+        ]
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "image",
+            "operationType": "show",
+            "alias": "bg",
+            "url": "bg_clubroom",
+            "transition": {
+              "type": "fade"
+            },
+            "$origin": "show image bg bg_clubroom with fade"
+          }
+        ]
+      },
+      {
+        "dialogue": "部室は、図書室の奥の、もと書庫だった部屋だ。"
+      },
+      {
+        "dialogue": "窓が一つ。鉄の棚が二列。椅子が五つ。そのうち二つにしか人が座らない。"
+      },
+      {
+        "dialogue": "棚のいちばん手前に、部誌の背表紙が三十一冊、並んでいる。"
+      },
+      {
+        "dialogue": "古い号ほど背が焼けて、一号のあたりは紙というより木の皮の色をしている。"
+      },
+      {
+        "dialogue": "その隣に、読書会のノートが二十五冊。こちらはただの大学ノートで、背には何も書いていない。"
+      },
+      {
+        "dialogue": "先輩は電気ポットのスイッチを入れて、取っ手の欠けたマグと、欠けていないマグを出した。"
+      },
+      {
+        "dialogue": "欠けている方が先輩のだ。二年間、一度も間違えたことがない。"
+      },
+      {
+        "dialogue": "初めてこの部屋に来た日のことを、ときどき思い出す。"
+      },
+      {
+        "dialogue": "入部届を出したわたしに、当時二年生だった先輩は「好きな本を一冊教えて」と言った。"
+      },
+      {
+        "dialogue": "答えると、「どこが？」と聞かれた。"
+      },
+      {
+        "dialogue": "答えられなかった。次の週に別の本で答えて、また「どこが？」と聞かれた。"
+      },
+      {
+        "dialogue": "それが二年近く続いている。いじわるではなくて、本当に知りたそうに聞くから、困る。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_neutral"
+            ],
+            "props": {
+              "xAlign": 0.5,
+              "yAlign": 1
+            },
+            "$origin": "show imagecontainer senpai [senpai_neutral] xAlign 0.5 yAlign 1"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "きみはさ、なんで書きたいの。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "いきなりですね。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "五十分しかないからね。"
+        }
+      },
+      {
+        "dialogue": "少し考えた。考えても、本当のことしか出てこなかった。"
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "……書き出しだけ、十七個あるんです。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "十七個。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "スマホのメモに。その先がないやつが、十七個。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "一個くらい、最後まで書いてみたいんです。このまま三年生になって、十八個目を増やすのは、嫌で。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "うん。じゃあ、なんで読みたいの。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "積んでる本が、四十冊くらいあって。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "四十冊。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "読んだことになってる本も、たくさんあって。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "あらすじは言えるけど、「あれのどこがいいの」って聞かれたら、たぶん答えられないやつ。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "読書会のノートを見ると、先輩たち、一冊の本でノート三頁ぶん話してるんですよ。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "ああいうふうに、一冊でいいから、人に渡せるくらい読んでみたいんです。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "書くのも読むのも、一個くらいは最後まで、ってことか。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "はい。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_grin"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_grin]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "同じこと言ってるね、きみ。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "じゃあ、両方やれそうな気がするでしょ。同じ話なんだから。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "……します。"
+        }
+      },
+      {
+        "dialogue": "お湯が沸いて、先輩がお茶をいれた。ティーバッグの紐を、マグの欠けた所に引っかけている。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_neutral"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_neutral]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "読書会の方を選ぶなら、本は何でもいいけど、迷ったらこれ。"
+        }
+      },
+      {
+        "dialogue": "先輩が棚から文庫本を一冊抜いて、机に置いた。"
+      },
+      {
+        "dialogue": "背の角が丸くなった新潮文庫。『李陵・山月記』。"
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "山月記って、教科書のやつですよね。虎になる人の。去年やりました。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "読んだ？"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "読みました。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "ふうん。"
+        }
+      },
+      {
+        "dialogue": "先輩はそれ以上言わなかった。何も言わないときの先輩の「ふうん」は、何か言うときより長く残る。"
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "持ってって。どっちを選んでも、持ってていいよ。返さなくていい。"
+        }
+      },
+      {
+        "dialogue": "文庫本を鞄にしまった。軽かった。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_neutral"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_neutral]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "途切れる方の話も、しておこうか。"
+        }
+      },
+      {
+        "dialogue": "先輩は棚の前に立って、読書会のノートを一冊抜いた。"
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "十三回目。二人で三時間、『こころ』の先生は卑怯かどうかで喧嘩してる。"
+        }
+      },
+      {
+        "dialogue": "開いた頁には、字の違う二人の書き込みが交互に続いて、終わりの方は鉛筆の跡が濃くなっていた。"
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "この二人、結婚したんだよ。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "えっ。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "今でも毎年三月に、読書会あてに葉書が来る。「今年は何を読みましたか」って。返事を書くのは部長の仕事。"
+        }
+      },
+      {
+        "dialogue": "先輩はノートを戻して、今度は部誌の十九号を抜いた。"
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "図書室の棚の端、毎年三月になると一冊ぶん空いてるの、知ってた？"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "知らなかったです。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "司書さんが空けてるの。十九号に短編を書いた人だからね。本人は隠してるけど。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "どっちを選んでも、どっちかが待ちぼうけになるわけ。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "……それ、今言います？"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_grin"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_grin]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "今言わないと、フェアじゃないでしょ。片方だけ知って選ぶのは。"
+        }
+      },
+      {
+        "dialogue": "去年の読書会を思い出した。五人で、この部屋で。"
+      },
+      {
+        "dialogue": "卒業する部長が選んだのは『銀河鉄道の夜』だった。書き直しの途中で作者が亡くなって、未完のまま残った話だ。"
+      },
+      {
+        "dialogue": "途中で終わってるのに、百年近く読まれてるんだよ、すごくない？ と部長は言った。"
+      },
+      {
+        "dialogue": "そのとき、先輩が泣いた。みんな驚いた。本人がいちばん驚いていた。"
+      },
+      {
+        "dialogue": "理由は聞けなかった。今も聞いていない。"
+      },
+      {
+        "dialogue": "それから少しのあいだ、二人とも黙ってお茶を飲んだ。"
+      },
+      {
+        "dialogue": "ストーブが、足の片方だけを温めている。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "sound",
+            "operationType": "stop",
+            "alias": "bgm_day",
+            "$origin": "stop sound bgm_day"
+          }
+        ]
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "sound",
+            "operationType": "play",
+            "alias": "bgm_night",
+            "url": "bgm_night",
+            "props": {
+              "channel": "bgm",
+              "loop": true
+            },
+            "$origin": "play sound bgm_night channel bgm loop true"
+          }
+        ]
+      },
+      {
+        "dialogue": "掛け時計が四時半を回ったころ、先輩がマグを置いた。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_neutral"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_neutral]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "一年のとき、わたしもあの二枚の前に立ったんだよ。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "先輩も？"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "当時の部長が貼ってね。書く担当と読む担当を決める紙。鉛筆も吊ってあった。あの鉛筆は、そのときの真似。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "わたしはね、両方に名前を書いた。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "え。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "誰も止めなかったよ。えらいね、って言われた。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_concern"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_concern]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "原稿は締め切りの朝に半分で止まって、読書会の本は三分の一で止まった。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "両方の場で「途中です」って言った。みんな優しいから、途中でもいいよって言ってくれた。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "あれがいちばんきつかったな。どっちも、誰にも渡せなかった。"
+        }
+      },
+      {
+        "dialogue": "先輩は、マグの取っ手のあった所を、親指でなぞっていた。"
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "手放さなかったんじゃないの。両方、落としたの。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "二年の春に、片方だけ選び直した。もう片方は、自分の手で置いてきた。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "どっちを、ですか。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_grin"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_grin]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "それは言わない。言ったら、きみが選ぶときの重りになるから。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "ずるいです。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "ずるいよ。部長だもん。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_neutral"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_neutral]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "ただね、置いてくるのは、ちゃんと痛いよ。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "落としたときの痛さとは違って、こっちは自分がやったって分かる痛さ。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "選ぶって、そういうことだよ。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "image",
+            "operationType": "show",
+            "alias": "bg",
+            "url": "bg_clubroom_dusk",
+            "transition": {
+              "type": "fade"
+            },
+            "$origin": "show image bg bg_clubroom_dusk with fade"
+          }
+        ]
+      },
+      {
+        "dialogue": "窓の外が、少しずつ橙色になってきた。"
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "規定ができたって聞いたとき、わたし、ちょっとほっとしたんだ。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "きみを止める理由ができたから。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "……規定がなかったら？"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_smile"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_smile]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "それでも二枚貼って、一枚だけって言ってたと思うな。嫌われてもいいから。"
+        }
+      },
+      {
+        "dialogue": "返事を探しているうちに、掛け時計が四時四十分を指した。"
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "行っておいで。名前を書いたら、その紙を外して生徒会室に持っていくの。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "先輩は、来ないんですか。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "行かない。見られてると、いい方を選んじゃうでしょ。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "どっちを選んでも、わたしはここでお茶飲んでるから。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "選ばなかった方の紙は、そのままにしておいて。公募だからね。いちおう、まだ募集中。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "来ないですよ、誰も。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "来ないだろうね。"
+        }
+      },
+      {
+        "labelToOpen": {
+          "label": "choice",
+          "type": "jump"
+        }
+      }
+    ],
+    "choice_|_c-0": [
+      {
+        "labelToOpen": {
+          "label": "write_start",
+          "type": "jump"
+        }
+      }
+    ],
+    "choice_|_c-1": [
+      {
+        "labelToOpen": {
+          "label": "read_start",
+          "type": "jump"
+        }
+      }
+    ],
+    "choice": [
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "remove",
+            "alias": "senpai",
+            "$origin": "remove imagecontainer senpai"
+          }
+        ]
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "image",
+            "operationType": "show",
+            "alias": "bg",
+            "url": "bg_hallway_dusk",
+            "transition": {
+              "type": "fade"
+            },
+            "$origin": "show image bg bg_hallway_dusk with fade"
+          }
+        ]
+      },
+      {
+        "dialogue": "廊下には誰もいなかった。"
+      },
+      {
+        "dialogue": "西の窓から入った日が、掲示板の端まで届いている。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "image",
+            "operationType": "show",
+            "alias": "bg",
+            "url": "bg_board_two_dusk",
+            "transition": {
+              "type": "fade"
+            },
+            "$origin": "show image bg bg_board_two_dusk with fade"
+          }
+        ]
+      },
+      {
+        "dialogue": "二枚の紙は、どちらも同じ橙色になっていた。"
+      },
+      {
+        "dialogue": "白さで見分けがつかなかったものが、今度は色でも見分けがつかない。"
+      },
+      {
+        "dialogue": "時計は四時四十八分。"
+      },
+      {
+        "dialogue": "鉛筆を手に取ると、紐が少しだけ張った。"
+      },
+      {
+        "dialogue": "左に伸ばしても、右に伸ばしても、紐の長さは足りている。"
+      },
+      {
+        "dialogue": "十七個の書き出しのこと。四十冊の本のこと。鞄の中の、軽い文庫本のこと。"
+      },
+      {
+        "dialogue": "棚に並んだ三十一冊の背と、二十五冊のノートのこと。"
+      },
+      {
+        "dialogue": "三月に届く葉書のこと。棚の端の、一冊ぶんの隙間のこと。"
+      },
+      {
+        "dialogue": "鉛筆は、どちらにも届く。"
+      },
+      {
+        "dialogue": "ここで両方に名前を書いても、誰も止めない。先輩は部室にいる。"
+      },
+      {
+        "dialogue": "えらいね、と言われるのかもしれない。"
+      },
+      {
+        "dialogue": "どちらかが、わたしの名前で、今年で終わる。"
+      },
+      {
+        "dialogue": "もう一度だけ、紙を見た。"
+      },
+      {
+        "choices": [
+          {
+            "text": "左の紙 ——「部誌に書く人」に名前を書く",
+            "label": "choice_|_c-0",
+            "props": {},
+            "type": "call",
+            "oneTime": true
+          },
+          {
+            "text": "右の紙 ——「読書会で読む人」に名前を書く",
+            "label": "choice_|_c-1",
+            "props": {},
+            "type": "call",
+            "oneTime": true
+          }
+        ]
+      }
+    ],
+    "write_start": [
+      {
+        "dialogue": "左の紙に、自分の名前を書いた。"
+      },
+      {
+        "dialogue": "鉛筆の芯は思ったより柔らかくて、字が少し太くなった。"
+      },
+      {
+        "dialogue": "紙を外すと、画鋲の穴が二つ残った。右の紙は、そのままにした。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "image",
+            "operationType": "show",
+            "alias": "bg",
+            "url": "bg_hallway_dusk",
+            "transition": {
+              "type": "fade"
+            },
+            "$origin": "show image bg bg_hallway_dusk with fade"
+          }
+        ]
+      },
+      {
+        "dialogue": "そっちを見ないようにして、生徒会室まで歩いた。"
+      },
+      {
+        "dialogue": "生徒会室には、さっきの会計の子が一人でいた。"
+      },
+      {
+        "dialogue": {
+          "character": "kaikei",
+          "text": "文芸部さん、部誌ですね。四時五十六分、受け取りました。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "kaikei",
+          "text": "読書会は今年はなし、で申請します。いいですか。"
+        }
+      },
+      {
+        "dialogue": "はい、と言うのに、声が一度引っかかった。"
+      },
+      {
+        "dialogue": {
+          "character": "kaikei",
+          "text": "部誌、楽しみにしてます。"
+        }
+      },
+      {
+        "dialogue": "帰りの廊下でも、そっちは見ないようにした。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "image",
+            "operationType": "show",
+            "alias": "bg",
+            "url": "bg_clubroom_dusk",
+            "transition": {
+              "type": "fade"
+            },
+            "$origin": "show image bg bg_clubroom_dusk with fade"
+          }
+        ]
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_neutral"
+            ],
+            "props": {
+              "xAlign": 0.5,
+              "yAlign": 1
+            },
+            "$origin": "show imagecontainer senpai [senpai_neutral] xAlign 0.5 yAlign 1"
+          }
+        ]
+      },
+      {
+        "dialogue": "部室に戻ると、先輩はさっきと同じ姿勢でお茶を飲んでいた。"
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "おかえり。どっち？"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "部誌です。書きます。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "そう。"
+        }
+      },
+      {
+        "dialogue": "先輩は立ち上がって、棚の前まで行った。"
+      },
+      {
+        "dialogue": "読書会のノートの、いちばん新しい一冊の背を、指で一度だけ押して、奥まで揃えた。"
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "じゃあ、読書会は二十五回で終わりだね。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "……すみません。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_concern"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_concern]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "謝らないの。選んだ人が謝ると、選ばれなかった方がかわいそうになるでしょ。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "気にしなくていいよ、とも言わないけどね。気にして。たまに。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "はい。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "あの、この本、返します。もう読む時間がないと思うので。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "持ってていいって言ったよ。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "読まないまま持ってるのも、選んだ人の仕事だから。"
+        }
+      },
+      {
+        "dialogue": "文庫本は鞄に戻った。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_neutral"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_neutral]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "原稿の締め切りは十八日後の朝。卒業号の八頁ぶん、全部きみの頁。わたしの文章は載らないから。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "卒業号なのに、先輩のが載らないんですか。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "編集後記は書くよ。二百字。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "二百字。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "二百字。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_grin"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_grin]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "最初の読者はわたしがやる。書けたら、誰より先にわたしに見せること。部長命令。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "怖いんですけど。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "怖いよ。書く人は、読まれる側に回るってことだから。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "remove",
+            "alias": "senpai",
+            "$origin": "remove imagecontainer senpai"
+          }
+        ]
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "image",
+            "operationType": "show",
+            "alias": "bg",
+            "url": "bg_bedroom",
+            "transition": {
+              "type": "fade"
+            },
+            "$origin": "show image bg bg_bedroom with fade"
+          }
+        ]
+      },
+      {
+        "dialogue": "その夜、自分の部屋で、白い画面を開いた。"
+      },
+      {
+        "dialogue": "何も書いていない文書の左上で、カーソルが点滅している。"
+      },
+      {
+        "dialogue": "八頁は、部誌の組み方だと一万字ちょっとだった。"
+      },
+      {
+        "dialogue": "十七個の書き出しを、スマホで順に眺めた。"
+      },
+      {
+        "dialogue": "「その町には、坂が一つしかなかった。」"
+      },
+      {
+        "dialogue": "「姉が死んだのは、嘘をついた次の日だった。」"
+      },
+      {
+        "dialogue": "「猫が喋るようになったので、税金の話をした。」"
+      },
+      {
+        "dialogue": "どれも、思いついた日には天才だと思ったものばかりだ。"
+      },
+      {
+        "dialogue": "どれも、二行目がなかった。"
+      },
+      {
+        "dialogue": "試しに一つ目の続きを打ってみる。"
+      },
+      {
+        "dialogue": "坂の上には、一軒の……"
+      },
+      {
+        "dialogue": "一軒の、何だろう。"
+      },
+      {
+        "dialogue": "消した。"
+      },
+      {
+        "dialogue": "二つ目の続きを考える。姉は、なんの嘘をついたのか。考えているうちに、わたしに姉はいないことを思い出した。"
+      },
+      {
+        "dialogue": "消した。"
+      },
+      {
+        "dialogue": "三つ目の猫は、税金の話をしたあとに何を話せばいいのか、わからなかった。"
+      },
+      {
+        "dialogue": "消した。"
+      },
+      {
+        "dialogue": "午前一時。文字数は、ゼロのままだった。"
+      },
+      {
+        "dialogue": "カーソルは急かしてはこない。ただ一秒に一回、ここが空いていると言っている。"
+      },
+      {
+        "dialogue": "四日目の夜に、ようやく三千字書けた。"
+      },
+      {
+        "dialogue": "嬉しくて夜中に読み返して、途中で手が止まった。"
+      },
+      {
+        "dialogue": "知っている声がした。去年読んだ、好きな作家の声だった。"
+      },
+      {
+        "dialogue": "句読点の打ち方も、段落の終わりにちょっと気の利いたことを言う癖も、全部その人のものだった。"
+      },
+      {
+        "dialogue": "わたしの名前で、その人の物まねが三千字、書いてあった。"
+      },
+      {
+        "dialogue": "全部消すのに、三秒かからなかった。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "image",
+            "operationType": "show",
+            "alias": "bg",
+            "url": "bg_hallway",
+            "transition": {
+              "type": "fade"
+            },
+            "$origin": "show image bg bg_hallway with fade"
+          }
+        ]
+      },
+      {
+        "dialogue": "六日目の昼休み、同じクラスのみおが文庫本を振りながら寄ってきた。"
+      },
+      {
+        "dialogue": {
+          "character": "mio",
+          "text": "ねえ、これ読んだ？ 絶対好きなやつ。貸す。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "ごめん、三月まで読めない。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mio",
+          "text": "受験生でもないのに？"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "書いてるから。部誌の。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mio",
+          "text": "へえ。できたら読ませて。"
+        }
+      },
+      {
+        "dialogue": "反射的に、嫌だと思った。"
+      },
+      {
+        "dialogue": "自分でも驚いた。部誌は読まれるために刷るのに。"
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "四十部刷るから、一部あげる。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mio",
+          "text": "やった。"
+        }
+      },
+      {
+        "dialogue": "知らない四十人に読まれるより、みお一人に読まれる方が、ずっと怖かった。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "image",
+            "operationType": "show",
+            "alias": "bg",
+            "url": "bg_bedroom",
+            "transition": {
+              "type": "fade"
+            },
+            "$origin": "show image bg bg_bedroom with fade"
+          }
+        ]
+      },
+      {
+        "dialogue": "七日目。読みたい本は減らなかった。"
+      },
+      {
+        "dialogue": "本屋に寄れば新刊の棚があるし、友達は「あれ読んだ？」と言う。"
+      },
+      {
+        "dialogue": "書けない夜ほど、いくらでも読みたくなる。"
+      },
+      {
+        "dialogue": "夜中の二時に、鞄から『李陵・山月記』を出した。"
+      },
+      {
+        "dialogue": "薄い。今から読めば、一時間もかからない。教科書のときより、たぶんちゃんと読める。"
+      },
+      {
+        "dialogue": "表紙を開きかけて、やめた。"
+      },
+      {
+        "dialogue": "今夜これを読んだら、今夜は書かない。"
+      },
+      {
+        "dialogue": "読む時間を手放すというのは、つまりこういうことだった。"
+      },
+      {
+        "dialogue": "読みたいと思いながら、毎晩、開かない。"
+      },
+      {
+        "dialogue": "卒業までに読もうと思っていた本が、一冊ずつ、来年の方へ流れていった。"
+      },
+      {
+        "dialogue": "文庫本を鞄に戻して、白い画面の前に戻った。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "image",
+            "operationType": "show",
+            "alias": "bg",
+            "url": "bg_clubroom",
+            "transition": {
+              "type": "fade"
+            },
+            "$origin": "show image bg bg_clubroom with fade"
+          }
+        ]
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_neutral"
+            ],
+            "props": {
+              "xAlign": 0.5,
+              "yAlign": 1
+            },
+            "$origin": "show imagecontainer senpai [senpai_neutral] xAlign 0.5 yAlign 1"
+          }
+        ]
+      },
+      {
+        "dialogue": "九日目の放課後、部室に寄った。"
+      },
+      {
+        "dialogue": "先輩は片足をストーブに向けて、文庫本を読んでいた。"
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "どう？"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "ゼロです。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "何字消した？"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "……二万字くらい。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "じゃあ書いてるじゃない。残ってないだけで。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "残らないと、書いたことにならないです。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_grin"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_grin]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "ならないね。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "書き出すと、うまいこと言おうとしちゃうんです。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "一行目でちょっと気の利いたことを言わないと、読んでもらえない気がして。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "誰に。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "先輩に。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_neutral"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_neutral]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "わたしは読むよ、どんな一行目でも。読むのが仕事だから。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "最近、何を見た？"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "何をって。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "目で。うまいこと言う前に、本当に見たもの。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "……掲示板です。四日間。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_grin"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_grin]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "地味だね。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "地味です。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "いいんじゃない、地味で。"
+        }
+      },
+      {
+        "dialogue": "先輩は文庫本に目を戻して、それ以上何も言わなかった。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "remove",
+            "alias": "senpai",
+            "$origin": "remove imagecontainer senpai"
+          }
+        ]
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "image",
+            "operationType": "show",
+            "alias": "bg",
+            "url": "bg_bedroom",
+            "transition": {
+              "type": "fade"
+            },
+            "$origin": "show image bg bg_bedroom with fade"
+          }
+        ]
+      },
+      {
+        "dialogue": "その夜の、午前三時。"
+      },
+      {
+        "dialogue": "白い画面の前で、書き出しの続きを考えるのをやめた。"
+      },
+      {
+        "dialogue": "十七個のメモを閉じた。"
+      },
+      {
+        "dialogue": "廊下のことを考えた。二月の音の少なさと、紐の先の鉛筆のこと。"
+      },
+      {
+        "dialogue": "四日間、毎日立っていた場所のこと。"
+      },
+      {
+        "dialogue": "あのとき、何か思ったはずだ。"
+      },
+      {
+        "dialogue": "手が先に動いた。"
+      },
+      {
+        "dialogue": "「名前を書く前の紙は、どちらも同じ白さをしていた。」"
+      },
+      {
+        "dialogue": "打ってから、しばらく画面を見ていた。"
+      },
+      {
+        "dialogue": "うまいことは、何も言っていない。"
+      },
+      {
+        "dialogue": "二行目を打った。「右の紙の方が、少しだけ曲がって留めてあった。」"
+      },
+      {
+        "dialogue": "本当はまっすぐだった。そう書いた方が続きそうだったから、そう書いた。"
+      },
+      {
+        "dialogue": "三行目を打った。"
+      },
+      {
+        "dialogue": "嘘を一つ混ぜたら、急に先が見えた。その嘘の分だけ、自分の話ではなくなった。"
+      },
+      {
+        "dialogue": "窓の外が明るくなるまでに、千二百字になった。"
+      },
+      {
+        "dialogue": "消さなかった。"
+      },
+      {
+        "dialogue": "それから毎晩、書いた。"
+      },
+      {
+        "dialogue": "廊下の話は、いつの間にか別の話になった。"
+      },
+      {
+        "dialogue": "二枚の紙は駅の伝言板の二行になって、書いた人は、三十年前に町を出た郵便局員になった。"
+      },
+      {
+        "dialogue": "十三日目に、六千字で止まった。"
+      },
+      {
+        "dialogue": "郵便局員が伝言板の前に戻ってきたところで、次に何をすればいいのかわからない。"
+      },
+      {
+        "dialogue": "原稿を持って部室へ行った。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "image",
+            "operationType": "show",
+            "alias": "bg",
+            "url": "bg_clubroom",
+            "transition": {
+              "type": "fade"
+            },
+            "$origin": "show image bg bg_clubroom with fade"
+          }
+        ]
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_neutral"
+            ],
+            "props": {
+              "xAlign": 0.5,
+              "yAlign": 1
+            },
+            "$origin": "show imagecontainer senpai [senpai_neutral] xAlign 0.5 yAlign 1"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "途中なんですけど、読んでもらえませんか。行き詰まってて。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_concern"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_concern]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "読まない。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "最初の読者をやるって、言ったじゃないですか。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "最初の読者は、最後まで書いたものの読者だよ。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "途中で読んだら、わたし、絶対なにか言うでしょ。そしたらきみ、わたしが喜ぶ方に書くでしょ。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "「途中です」って言って渡すのは、わたしがいちばんよく知ってるやつだから。"
+        }
+      },
+      {
+        "dialogue": "言い返せなかった。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_neutral"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_neutral]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "その人、何をしたいかわからないなら、何をしたくないかは分かる？"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "……伝言板を、消したくないです。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_grin"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_grin]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "ほら。読まなくても面白そうじゃない。帰って書きなさい。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "remove",
+            "alias": "senpai",
+            "$origin": "remove imagecontainer senpai"
+          }
+        ]
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "image",
+            "operationType": "show",
+            "alias": "bg",
+            "url": "bg_bedroom",
+            "transition": {
+              "type": "fade"
+            },
+            "$origin": "show image bg bg_bedroom with fade"
+          }
+        ]
+      },
+      {
+        "dialogue": "その夜、郵便局員は伝言板を消さずに、駅を出た。"
+      },
+      {
+        "dialogue": "そこから先は、四晩で書けた。"
+      },
+      {
+        "dialogue": "一万字は、書いてみると短かった。"
+      },
+      {
+        "dialogue": "友達の誘いを二回断った。新刊を二冊、買わずに帰った。文庫本は鞄の底にあった。"
+      },
+      {
+        "dialogue": "十七日目の夜、最後の一行を打った。"
+      },
+      {
+        "dialogue": "十八個目の書き出しにならなかった、初めての文章だった。"
+      },
+      {
+        "dialogue": "読み返すと、だめだと思う所が十か所以上あった。直す時間は、もうなかった。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "sound",
+            "operationType": "stop",
+            "alias": "bgm_night",
+            "$origin": "stop sound bgm_night"
+          }
+        ]
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "sound",
+            "operationType": "play",
+            "alias": "bgm_day",
+            "url": "bgm_day",
+            "props": {
+              "channel": "bgm",
+              "loop": true
+            },
+            "$origin": "play sound bgm_day channel bgm loop true"
+          }
+        ]
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "image",
+            "operationType": "show",
+            "alias": "bg",
+            "url": "bg_clubroom",
+            "transition": {
+              "type": "fade"
+            },
+            "$origin": "show image bg bg_clubroom with fade"
+          }
+        ]
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_smile"
+            ],
+            "props": {
+              "xAlign": 0.5,
+              "yAlign": 1
+            },
+            "$origin": "show imagecontainer senpai [senpai_smile] xAlign 0.5 yAlign 1"
+          }
+        ]
+      },
+      {
+        "dialogue": "十八日目の朝、印刷した紙の束を持って部室へ行った。"
+      },
+      {
+        "dialogue": "八頁。ホチキスの針が斜めになっている。"
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "おはよう。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "……先に言っておきたいことが、いくつかあって。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "三頁目は勢いで書いたので雑です。後半は時間がなくて直せてなくて。それと題名は仮で——"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_grin"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_grin]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "貸して。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "あと、読むなら家で読んでもらえると——"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "ここで読むよ。ここで読まないと、きみの顔が見られないでしょ。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "見ないでください。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "見るよ。最初の読者の特権だもん。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_neutral"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_neutral]"
+          }
+        ]
+      },
+      {
+        "dialogue": "先輩は束を受け取って、足を組み替えた。"
+      },
+      {
+        "dialogue": "それから読み始めた。顔は見なかった。"
+      },
+      {
+        "dialogue": "知らなかった。先輩が本を読むところは何百回も見てきたのに、自分の文章を読まれるのがこんなものだとは。"
+      },
+      {
+        "dialogue": "紙をめくる音が、一枚ごとに、部屋のどこか遠くで鳴っている気がした。"
+      },
+      {
+        "dialogue": "先輩は一頁目の途中で、少しだけ口の端を動かした。"
+      },
+      {
+        "dialogue": "どの行だろう。笑ったのか。笑うところなんてない。"
+      },
+      {
+        "dialogue": "二頁目は速かった。飛ばしているのか。"
+      },
+      {
+        "dialogue": "三頁目で止まった。戻った。もう一度読んでいる。"
+      },
+      {
+        "dialogue": "わたしは、もう入っていないマグを持ち上げて、飲むふりをした。"
+      },
+      {
+        "dialogue": "逃げたかった。"
+      },
+      {
+        "dialogue": "書くというのはこの椅子に座ることだったのだと、このとき初めてわかった。"
+      },
+      {
+        "dialogue": "二十分かかった。八頁を読むには、長すぎる。"
+      },
+      {
+        "dialogue": "先輩は最後の頁を読み終えて、束を揃えて、机に置いた。"
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "読んだよ。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "……はい。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "三頁目の真ん中、郵便局員が手紙を燃やすところ。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "あそこだけ、きみ、うまいこと言おうとしたでしょ。"
+        }
+      },
+      {
+        "dialogue": "胸のあたりが冷たくなった。いちばん気に入っていた段落だった。"
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "……はい。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "そこ以外は、ちゃんと見たものを書いてる。見てないことも、見たみたいに書いてる。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "最後まで書いたんだね。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "書きました。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "最初の一行、誰かに見せた？"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "見せてないです。先輩が最初です。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_smile"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_smile]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "いいね、あの一行。地味で。"
+        }
+      },
+      {
+        "dialogue": "泣くかと思ったけれど、泣かなかった。かわりに、急にお腹が空いた。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_grin"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_grin]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "三頁目だけ直して。今日の放課後までに。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "今日の放課後って。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "輪転機、予約してあるの。選んだんだから、出すよ。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "remove",
+            "alias": "senpai",
+            "$origin": "remove imagecontainer senpai"
+          }
+        ]
+      },
+      {
+        "dialogue": "昼休みに、三頁目を開いた。"
+      },
+      {
+        "dialogue": "いちばん気に入っていた段落を読み返す。"
+      },
+      {
+        "dialogue": "「燃える手紙は、読まれなかった言葉の、最後の読まれ方だった。」"
+      },
+      {
+        "dialogue": "確かに、うまいことを言っている。顔が熱くなった。"
+      },
+      {
+        "dialogue": "消して、こう打った。"
+      },
+      {
+        "dialogue": "「手紙はよく燃えなかった。湿っていたので、マッチを三回擦った。」"
+      },
+      {
+        "dialogue": "こっちの方が、見た気がした。"
+      },
+      {
+        "dialogue": "卒業式の前の日、部誌ができた。"
+      },
+      {
+        "dialogue": "三十二号。四十部。インクの匂いがまだ抜けていない。"
+      },
+      {
+        "dialogue": "目次には、作者が一人しかいない。わたしの名前と、題名と、八頁。そのあとに「編集後記」。"
+      },
+      {
+        "dialogue": "自分の名前が印刷されているのを見ても、思ったほど嬉しくなかった。そのかわり、紙の束を重いと思った。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "image",
+            "operationType": "show",
+            "alias": "bg",
+            "url": "bg_hallway",
+            "transition": {
+              "type": "fade"
+            },
+            "$origin": "show image bg bg_hallway with fade"
+          }
+        ]
+      },
+      {
+        "dialogue": "昼休みに、昇降口に机を出して積んだ。"
+      },
+      {
+        "dialogue": {
+          "character": "kaikei",
+          "text": "一人なんですね、今号。"
+        }
+      },
+      {
+        "dialogue": "会計の子は目次を見てそう言って、一部持っていった。"
+      },
+      {
+        "dialogue": "みおが来て、一部取って、その場で開いた。"
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "ここで読まないで。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mio",
+          "text": "なんで。"
+        }
+      },
+      {
+        "dialogue": "机の端を片づけるふりをした。みおは壁にもたれて読んでいた。五分、十分。途中で一回、鼻で笑った。どの行だろう。"
+      },
+      {
+        "dialogue": {
+          "character": "mio",
+          "text": "ねえ、これ、なんでマッチ三回も擦るの。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "……湿ってたから。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mio",
+          "text": "そっか。ふうん。いいね、ここ。"
+        }
+      },
+      {
+        "dialogue": "みおは部誌を鞄にしまって、行ってしまった。しばらく、指の先が冷たかった。"
+      },
+      {
+        "dialogue": "放課後、一部を持って図書室へ行った。"
+      },
+      {
+        "dialogue": {
+          "character": "shisho",
+          "text": "できたのね。"
+        }
+      },
+      {
+        "dialogue": "司書さんは両手で受け取って、棚の端の、一冊ぶんの隙間に差した。"
+      },
+      {
+        "dialogue": {
+          "character": "shisho",
+          "text": "読むのは閉館してからにするわ。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "あの、十九号の——"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "shisho",
+          "text": "なんのこと？"
+        }
+      },
+      {
+        "dialogue": "眼鏡の奥が、少し笑っていた。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "sound",
+            "operationType": "stop",
+            "alias": "bgm_day",
+            "$origin": "stop sound bgm_day"
+          }
+        ]
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "sound",
+            "operationType": "play",
+            "alias": "bgm_night",
+            "url": "bgm_night",
+            "props": {
+              "channel": "bgm",
+              "loop": true
+            },
+            "$origin": "play sound bgm_night channel bgm loop true"
+          }
+        ]
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "image",
+            "operationType": "show",
+            "alias": "bg",
+            "url": "bg_clubroom_dusk",
+            "transition": {
+              "type": "fade"
+            },
+            "$origin": "show image bg bg_clubroom_dusk with fade"
+          }
+        ]
+      },
+      {
+        "dialogue": "部室に戻って、自分の部誌の最後の頁を開いた。"
+      },
+      {
+        "dialogue": "編集後記は、最後の頁の下の方に、小さな字で組んであった。"
+      },
+      {
+        "dialogue": "読むのは初めてだった。先輩は校正も一人でやって、この頁だけ見せてくれなかった。"
+      },
+      {
+        "dialogue": "「編集後記。今号の作者は一人です。部長のわたしは二年の春に書くことをやめて、読むほうを選びました。」"
+      },
+      {
+        "dialogue": "「その判断を悔やんだことはありません。ただ今号を読んでいて、一度だけ、惜しいと思いました。以上です。」"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_neutral"
+            ],
+            "props": {
+              "xAlign": 0.5,
+              "yAlign": 1
+            },
+            "$origin": "show imagecontainer senpai [senpai_neutral] xAlign 0.5 yAlign 1"
+          }
+        ]
+      },
+      {
+        "dialogue": "顔を上げると、先輩は窓の方を向いていた。"
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "先輩。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "うん。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "書いてたんですね。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "書いてたよ。一年のときに半分。二年の春に一人で残りを書いて、それでやめた。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "どうして、やめたんですか。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "読むほうが、好きだったから。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "それと、両方持ってると、どっちも落とすって分かったから。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_grin"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_grin]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "書く人のままだったらね、わたし、きみの八頁をあんなふうに読めなかったよ。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "絶対、嫉妬してた。三頁目以外も全部、直させてた。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "惜しいって、書いてありました。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_smile"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_smile]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "書いたね。一回だけね。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "二回は惜しまないよ。選んだんだから。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "わたしも、読むのを手放したんですよね。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "あの本、まだ読んでないです。鞄に入れたまま。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "うん、知ってる。栞、最初の頁のままでしょ。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "なんで知ってるんですか。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "読む人だから。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_concern"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_concern]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "本はなくならないよ。いつか読めばいい。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "ただ、この部屋で、誰かに渡すために読むことは、もうないけどね。それが、きみの置いてきた分。"
+        }
+      },
+      {
+        "dialogue": "先輩は机の上から葉書を一枚取って、こちらへ滑らせた。"
+      },
+      {
+        "dialogue": "「文芸部 読書会さま。今年は何を読みましたか。」"
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "今朝届いた。返事を書くのは部長の仕事。今日からは、きみ。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "読書会はありませんでした、って書くんですか。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "書いて。ちゃんと、きみの字で。"
+        }
+      },
+      {
+        "dialogue": "葉書の余白は狭かった。少し考えて、書いた。"
+      },
+      {
+        "dialogue": "「今年は読書会をやめて、部誌を書きました。一部お送りします。」"
+      },
+      {
+        "dialogue": "十三回目の二人が喧嘩したノートは、棚の奥で動かなかった。"
+      },
+      {
+        "dialogue": "しばらく、二人でお茶を飲んだ。"
+      },
+      {
+        "dialogue": "明日、先輩はこの部屋に来なくなる。"
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "先輩。次も、書いたら、読んでくれますか。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "卒業しても。"
+        }
+      },
+      {
+        "dialogue": "先輩は欠けたマグを置いて、こちらを見た。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_smile"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_smile]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "書いて。読むのは、わたしが選んだほうだから。"
+        }
+      },
+      {
+        "labelToOpen": {
+          "label": "ending_write",
+          "type": "jump"
+        }
+      }
+    ],
+    "ending_write": [
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "remove",
+            "alias": "senpai",
+            "$origin": "remove imagecontainer senpai"
+          }
+        ]
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "image",
+            "operationType": "show",
+            "alias": "bg",
+            "url": "bg_hallway",
+            "transition": {
+              "type": "fade"
+            },
+            "$origin": "show image bg bg_hallway with fade"
+          }
+        ]
+      },
+      {
+        "dialogue": "四月の、最初の放課後。"
+      },
+      {
+        "dialogue": "部室の椅子は、一人に四つ余るようになった。"
+      },
+      {
+        "dialogue": "廊下の掲示板は、新入生向けの紙で埋まりかけている。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "image",
+            "operationType": "show",
+            "alias": "bg",
+            "url": "bg_board_write_end",
+            "transition": {
+              "type": "fade"
+            },
+            "$origin": "show image bg bg_board_write_end with fade"
+          }
+        ]
+      },
+      {
+        "dialogue": "その端に、紙が一枚、残っている。"
+      },
+      {
+        "dialogue": "「読書会で読む人」。"
+      },
+      {
+        "dialogue": "下線の上は、空いたままだ。誰も来なかったし、先輩は剥がさずに卒業した。"
+      },
+      {
+        "dialogue": "読書会は、二十五回で終わった。"
+      },
+      {
+        "dialogue": "紙は少し日に焼けて、もう、あの日の白さではなかった。"
+      },
+      {
+        "dialogue": "鞄の底の文庫本には、栞が最初の頁に挟まったままだ。"
+      },
+      {
+        "dialogue": "紐の先で、鉛筆が少しだけ揺れていた。"
+      },
+      {
+        "dialogue": "わたしはその前を通り過ぎて、部室へ行く。書きかけが、一つある。"
+      },
+      {
+        "dialogue": "（エンド 1「書く人」）"
+      },
+      {
+        "dialogue": "『二枚の紙』"
+      },
+      {
+        "dialogue": "脚本は kent7k と Claude の共作です。Claude は Anthropic の AI です。"
+      },
+      {
+        "dialogue": "絵は画像生成 AI（OpenAI の gpt-image-2）で作りました。音楽は Claude がコードで書いて合成しました。"
+      },
+      {
+        "dialogue": "引用は中島敦『山月記』です（青空文庫）。掲示板の字は Zen Kurenaido です。"
+      },
+      {
+        "dialogue": "エンジンは Pixi’VN。ソースは github.com/kent7k/erabu-vn にあります（GPL-3.0）。"
+      },
+      {
+        "end": "game_end"
+      }
+    ],
+    "read_start": [
+      {
+        "dialogue": "右の紙に、自分の名前を書いた。"
+      },
+      {
+        "dialogue": "鉛筆の芯は思ったより柔らかくて、字が少し太くなった。"
+      },
+      {
+        "dialogue": "紙を外すと、画鋲の穴が二つ残った。左の紙は、そのままにした。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "image",
+            "operationType": "show",
+            "alias": "bg",
+            "url": "bg_hallway_dusk",
+            "transition": {
+              "type": "fade"
+            },
+            "$origin": "show image bg bg_hallway_dusk with fade"
+          }
+        ]
+      },
+      {
+        "dialogue": "そっちを見ないようにして、生徒会室まで歩いた。"
+      },
+      {
+        "dialogue": "生徒会室には、さっきの会計の子が一人でいた。"
+      },
+      {
+        "dialogue": {
+          "character": "kaikei",
+          "text": "文芸部さん、読書会ですね。四時五十六分、受け取りました。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "kaikei",
+          "text": "部誌は今年はなし、で申請します。いいですか。"
+        }
+      },
+      {
+        "dialogue": "はい、と言うのに、声が一度引っかかった。"
+      },
+      {
+        "dialogue": {
+          "character": "kaikei",
+          "text": "そうですか。部誌、今年はないんですね。"
+        }
+      },
+      {
+        "dialogue": "彼はそれだけ言って、書類に判を押した。残念そうな顔をしないようにしている顔だった。"
+      },
+      {
+        "dialogue": "帰りの廊下でも、そっちは見ないようにした。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "image",
+            "operationType": "show",
+            "alias": "bg",
+            "url": "bg_clubroom_dusk",
+            "transition": {
+              "type": "fade"
+            },
+            "$origin": "show image bg bg_clubroom_dusk with fade"
+          }
+        ]
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_neutral"
+            ],
+            "props": {
+              "xAlign": 0.5,
+              "yAlign": 1
+            },
+            "$origin": "show imagecontainer senpai [senpai_neutral] xAlign 0.5 yAlign 1"
+          }
+        ]
+      },
+      {
+        "dialogue": "部室に戻ると、先輩はさっきと同じ姿勢でお茶を飲んでいた。"
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "おかえり。どっち？"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "読書会です。読みます。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "そう。"
+        }
+      },
+      {
+        "dialogue": "先輩は立ち上がって、棚の前まで行った。"
+      },
+      {
+        "dialogue": "部誌の三十一号の背を、指で一度だけ押して、奥まで揃えた。"
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "じゃあ、部誌は三十一号で終わりだね。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "……すみません。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_concern"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_concern]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "謝らないの。選んだ人が謝ると、選ばれなかった方がかわいそうになるでしょ。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "気にしなくていいよ、とも言わないけどね。気にして。たまに。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "はい。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "あの、十七個の書き出しは、どうしたらいいですか。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "スマホの中にあるんでしょ。どうもしなくていいよ。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "ただ、読む人を選んだ三週間のあいだは、十八個目を増やさないこと。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_neutral"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_neutral]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "読書会は卒業式の前の日。読み手はきみ、聞き手はわたし。二人だけど、ちゃんと第二十六回。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "何をすればいいんですか。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "決まりは一つ。感想を言わないこと。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "読書会なのに？"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "「面白かったです」は、本の話じゃなくて、きみの話でしょ。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "読んでない人が読みたくなるように、読んだ人がもう一回開きたくなるように、渡すの。二十分で。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "二十分。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "本は何でもいいよ。四十冊もあるんでしょ。"
+        }
+      },
+      {
+        "dialogue": "鞄の中の、軽い重さを思い出した。"
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "……これにします。"
+        }
+      },
+      {
+        "dialogue": "文庫本を机に出す。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_grin"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_grin]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "教科書で読んだんじゃなかったの？"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "読みました。三週間もあれば、余裕です。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "ふうん。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "remove",
+            "alias": "senpai",
+            "$origin": "remove imagecontainer senpai"
+          }
+        ]
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "image",
+            "operationType": "show",
+            "alias": "bg",
+            "url": "bg_bedroom",
+            "transition": {
+              "type": "fade"
+            },
+            "$origin": "show image bg bg_bedroom with fade"
+          }
+        ]
+      },
+      {
+        "dialogue": "その夜、自分の部屋で『山月記』を読んだ。"
+      },
+      {
+        "dialogue": "文庫で十数頁。三十分かからなかった。"
+      },
+      {
+        "dialogue": "知っている話だった。"
+      },
+      {
+        "dialogue": "隴西の李徴は博学才穎で、若くして役人になったけれど、詩人として名を残そうと職を辞める。"
+      },
+      {
+        "dialogue": "うまくいかず、やがて発狂して山に消える。"
+      },
+      {
+        "dialogue": "翌年、旧友の袁傪が山道で虎に襲われかけて、その虎が李徴だとわかる。"
+      },
+      {
+        "dialogue": "虎は草むらに隠れたまま身の上を語って、詩を書きとってくれと頼んで、去る。"
+      },
+      {
+        "dialogue": "教科書の脚注も覚えている。テストにも出た。「臆病な自尊心」に線を引いて、意味を答えた。"
+      },
+      {
+        "dialogue": "三週間もいらないな、と思った。"
+      },
+      {
+        "dialogue": "残りの日で、積んである本を何冊か読めるな、とも思った。"
+      },
+      {
+        "dialogue": "そこまで考えて、なんとなくスマホのメモを開いた。"
+      },
+      {
+        "dialogue": "十七個の書き出しがあった。"
+      },
+      {
+        "dialogue": "掲示板の前で何か思いついた気がしたけれど、メモには入っていない。"
+      },
+      {
+        "dialogue": "入れていないのだから、当たり前だ。"
+      },
+      {
+        "dialogue": "閉じた。"
+      },
+      {
+        "dialogue": "三日目に、読書会で話すことを書き出してみた。"
+      },
+      {
+        "dialogue": "「李徴は自尊心が高すぎた。そのせいで虎になった。私たちも気をつけたい。」"
+      },
+      {
+        "dialogue": "声に出して読んだら、十秒で終わった。二十分のうちの、十秒。"
+      },
+      {
+        "dialogue": "しかもこれは本の話ではなくて、授業のまとめだった。"
+      },
+      {
+        "dialogue": "もう一度読んだ。二度目は、最初の頁で引っかかった。"
+      },
+      {
+        "dialogue": "「下吏となって長く膝を俗悪な大官の前に屈するよりは、詩家としての名を死後百年に遺そうとしたのである。」"
+      },
+      {
+        "dialogue": "教科書のときは、偉そうな人だなと思った。"
+      },
+      {
+        "dialogue": "今は、百年後まで待つつもりの人が、誰に読ませるつもりだったのかが気になった。"
+      },
+      {
+        "dialogue": "五日目の夜は、鉛筆を持って読んだ。線を引きながら読むと遅くなる。"
+      },
+      {
+        "dialogue": "李徴が草むらの中から、自分がなぜ虎になったのかを説明する場面。"
+      },
+      {
+        "dialogue": "「己の珠に非ざることを惧れるが故に、敢て刻苦して磨こうともせず、」"
+      },
+      {
+        "dialogue": "「又、己の珠なるべきを半ば信ずるが故に、碌々として瓦に伍することも出来なかった。」"
+      },
+      {
+        "dialogue": "自分は宝石ではないかもしれない。それが怖いから、磨かない。"
+      },
+      {
+        "dialogue": "自分は宝石かもしれない。そう半分信じているから、石ころの中にも混ざれない。"
+      },
+      {
+        "dialogue": "去年の教室でここに線を引いたとき、これは李徴の話だと思っていた。"
+      },
+      {
+        "dialogue": "十七個の書き出しのことが、頭に浮かんだ。"
+      },
+      {
+        "dialogue": "二行目を書かなければ、つまらなくならない。"
+      },
+      {
+        "dialogue": "本を閉じて、しばらく天井を見た。"
+      },
+      {
+        "dialogue": "読むというのは、こんなに具合の悪いものだったか。"
+      },
+      {
+        "dialogue": "その夜、どうしても書きたくなった。"
+      },
+      {
+        "dialogue": "虎のことじゃない。あの廊下の、掲示板の話を。"
+      },
+      {
+        "dialogue": "白い画面を開いて、カーソルを見た。"
+      },
+      {
+        "dialogue": "あの日に何か、いい一行を思いついた気がする。紙の、何か。"
+      },
+      {
+        "dialogue": "思い出せなかった。"
+      },
+      {
+        "dialogue": "書き始めれば、今夜は読まない。二十分の準備は一つも進まない。"
+      },
+      {
+        "dialogue": "部誌は三十一号で終わった。書いても、載せる場所はない。"
+      },
+      {
+        "dialogue": "画面を閉じた。"
+      },
+      {
+        "dialogue": "閉じるのに、思ったより力がいった。"
+      },
+      {
+        "dialogue": "書く夜を手放すというのは、つまりこういうことだった。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "image",
+            "operationType": "show",
+            "alias": "bg",
+            "url": "bg_hallway",
+            "transition": {
+              "type": "fade"
+            },
+            "$origin": "show image bg bg_hallway with fade"
+          }
+        ]
+      },
+      {
+        "dialogue": "七日目の昼休み、同じクラスのみおで試してみることにした。"
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "ねえ、山月記って覚えてる？"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mio",
+          "text": "虎のやつでしょ。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "そう。それがさ、すごいの。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mio",
+          "text": "どこが？"
+        }
+      },
+      {
+        "dialogue": "また、「どこが？」だ。"
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "……自尊心が、臆病なの。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mio",
+          "text": "知ってる。テストに出た。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "そうなんだけど。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mio",
+          "text": "え、終わり？"
+        }
+      },
+      {
+        "dialogue": "終わりだった。一週間読んで、口から出てきたのは、テストに出た答えだけだった。"
+      },
+      {
+        "dialogue": "頭の中では大きいのに、出すと一口で終わる。"
+      },
+      {
+        "dialogue": "書き出しが二行目で止まるのと、どこか似ていた。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "sound",
+            "operationType": "stop",
+            "alias": "bgm_night",
+            "$origin": "stop sound bgm_night"
+          }
+        ]
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "sound",
+            "operationType": "play",
+            "alias": "bgm_day",
+            "url": "bgm_day",
+            "props": {
+              "channel": "bgm",
+              "loop": true
+            },
+            "$origin": "play sound bgm_day channel bgm loop true"
+          }
+        ]
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "image",
+            "operationType": "show",
+            "alias": "bg",
+            "url": "bg_clubroom",
+            "transition": {
+              "type": "fade"
+            },
+            "$origin": "show image bg bg_clubroom with fade"
+          }
+        ]
+      },
+      {
+        "dialogue": "十日目の放課後、部室で昔の読書会のノートを読んだ。"
+      },
+      {
+        "dialogue": "二十五冊。字の上手い人、下手な人。余白に猫を描いている人。"
+      },
+      {
+        "dialogue": "誰かが一冊の本について話したことを、別の誰かが書きとっている。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_neutral"
+            ],
+            "props": {
+              "xAlign": 0.5,
+              "yAlign": 1
+            },
+            "$origin": "show imagecontainer senpai [senpai_neutral] xAlign 0.5 yAlign 1"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "どう？"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "知らない人の話って、面白いですね。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "面白いよ。その人たちのこと、もう誰も覚えてないのにね。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "先輩の代のもありますか。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "あるよ。二十四冊目。"
+        }
+      },
+      {
+        "dialogue": "二十四冊目を開いた。先輩が一年のときの回。"
+      },
+      {
+        "dialogue": "読み手の欄に先輩の名前があって、本の題の横に、鉛筆で「途中です」とあった。"
+      },
+      {
+        "dialogue": "次の頁は白紙だった。"
+      },
+      {
+        "dialogue": "顔を上げると、先輩は何も言わずに、片足をストーブに向けて文庫本を読んでいた。"
+      },
+      {
+        "dialogue": "少し考えて、隣の棚から部誌を抜いた。同じ年の、三十号。"
+      },
+      {
+        "dialogue": "目次に先輩の名前があった。題は「未定」。"
+      },
+      {
+        "dialogue": "その頁には、一行だけ印刷されていた。"
+      },
+      {
+        "dialogue": "「作者の都合により、次号に掲載します。」"
+      },
+      {
+        "dialogue": "三十一号を開いた。先輩の名前は、どこにもなかった。"
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "先輩。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "なに。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "……いえ。"
+        }
+      },
+      {
+        "dialogue": "聞けなかった。聞くより先に、読むものがまだ残っている気がした。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "remove",
+            "alias": "senpai",
+            "$origin": "remove imagecontainer senpai"
+          }
+        ]
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "image",
+            "operationType": "show",
+            "alias": "bg",
+            "url": "bg_hallway",
+            "transition": {
+              "type": "fade"
+            },
+            "$origin": "show image bg bg_hallway with fade"
+          }
+        ]
+      },
+      {
+        "dialogue": "帰りに図書室を通ると、司書さんがカウンターから声をかけてきた。"
+      },
+      {
+        "dialogue": {
+          "character": "shisho",
+          "text": "今年の部誌は、いつごろになりそう？"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "……今年は、ないんです。"
+        }
+      },
+      {
+        "dialogue": "司書さんは少しのあいだ何も言わず、眼鏡を直した。"
+      },
+      {
+        "dialogue": {
+          "character": "shisho",
+          "text": "そう。じゃあ、あそこ、詰めておかないとね。"
+        }
+      },
+      {
+        "dialogue": "棚の端の、一冊ぶんの隙間を見た。"
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "すみません。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "shisho",
+          "text": "謝らなくていいのよ。読書会なんでしょう。何を読むの？"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "山月記です。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "shisho",
+          "text": "いいわね。十九号の人もね、あれが好きだったのよ。"
+        }
+      },
+      {
+        "dialogue": "誰の話なのか、わたしは知らないふりをした。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "sound",
+            "operationType": "stop",
+            "alias": "bgm_day",
+            "$origin": "stop sound bgm_day"
+          }
+        ]
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "sound",
+            "operationType": "play",
+            "alias": "bgm_night",
+            "url": "bgm_night",
+            "props": {
+              "channel": "bgm",
+              "loop": true
+            },
+            "$origin": "play sound bgm_night channel bgm loop true"
+          }
+        ]
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "image",
+            "operationType": "show",
+            "alias": "bg",
+            "url": "bg_bedroom",
+            "transition": {
+              "type": "fade"
+            },
+            "$origin": "show image bg bg_bedroom with fade"
+          }
+        ]
+      },
+      {
+        "dialogue": "十五日目。もう何回目か数えていない。"
+      },
+      {
+        "dialogue": "虎の場面では止まらなくなった。止まるのは、終わりの方だ。"
+      },
+      {
+        "dialogue": "李徴が、自分の詩を書きとってくれと頼むところ。"
+      },
+      {
+        "dialogue": "「作の巧拙は知らず、とにかく、産を破り心を狂わせてまで自分が生涯それに執着したところのものを、」"
+      },
+      {
+        "dialogue": "「一部なりとも後代に伝えないでは、死んでも死に切れないのだ。」"
+      },
+      {
+        "dialogue": "袁傪は部下に命じて、草むらの中の声に合わせて書きとらせる。夜の山道で、長短およそ三十篇。"
+      },
+      {
+        "dialogue": "教科書のときは読み飛ばしていた次の一文で、鉛筆が止まった。"
+      },
+      {
+        "dialogue": "袁傪は感嘆しながら、同時にこう感じている。"
+      },
+      {
+        "dialogue": "「第一流の作品となるのには、何処か（非常に微妙な点に於て）欠けるところがあるのではないか」"
+      },
+      {
+        "dialogue": "友達が虎になって、最後に詩を差し出している。"
+      },
+      {
+        "dialogue": "その真夜中に、この人は、ちゃんと足りないと思っている。"
+      },
+      {
+        "dialogue": "ひどい人だ、と最初は思った。"
+      },
+      {
+        "dialogue": "もう一度読んで、逆だと思った。"
+      },
+      {
+        "dialogue": "足りないと思いながら、一篇も落とさず、全部書きとらせて、持って帰る。"
+      },
+      {
+        "dialogue": "褒めて気持ちよくさせるのでもなく、黙って帰るのでもなく。"
+      },
+      {
+        "dialogue": "この人が持って帰らなかったら、草むらの声はそこで終わっていた。"
+      },
+      {
+        "dialogue": "読む人って、これかもしれない。"
+      },
+      {
+        "dialogue": "メモに一行書いた。書き出しではない。二十分の、最後の一行の候補だった。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "image",
+            "operationType": "show",
+            "alias": "bg",
+            "url": "bg_hallway",
+            "transition": {
+              "type": "fade"
+            },
+            "$origin": "show image bg bg_hallway with fade"
+          }
+        ]
+      },
+      {
+        "dialogue": "十八日目の昼休み、もう一度みおを捕まえた。"
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "山月記の最後の方で、虎が詩を聞かせるんだけど。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mio",
+          "text": "うん。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "聞いてる友達がね、感動しながら、心の中で「でも、ちょっと足りないな」って思ってるの。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mio",
+          "text": "え、ひど。そんなとこあった？"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "ある。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mio",
+          "text": "貸して。"
+        }
+      },
+      {
+        "dialogue": "文庫本を渡した。みおは昼休みの残りで終わりの数頁を読んで、顔をしかめて、もう一度読んだ。"
+      },
+      {
+        "dialogue": {
+          "character": "mio",
+          "text": "……ほんとだ。ひど。"
+        }
+      },
+      {
+        "dialogue": "渡せた、と思った。まだ一人に、一か所だけ。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "sound",
+            "operationType": "stop",
+            "alias": "bgm_night",
+            "$origin": "stop sound bgm_night"
+          }
+        ]
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "sound",
+            "operationType": "play",
+            "alias": "bgm_day",
+            "url": "bgm_day",
+            "props": {
+              "channel": "bgm",
+              "loop": true
+            },
+            "$origin": "play sound bgm_day channel bgm loop true"
+          }
+        ]
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "image",
+            "operationType": "show",
+            "alias": "bg",
+            "url": "bg_clubroom",
+            "transition": {
+              "type": "fade"
+            },
+            "$origin": "show image bg bg_clubroom with fade"
+          }
+        ]
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_neutral"
+            ],
+            "props": {
+              "xAlign": 0.5,
+              "yAlign": 1
+            },
+            "$origin": "show imagecontainer senpai [senpai_neutral] xAlign 0.5 yAlign 1"
+          }
+        ]
+      },
+      {
+        "dialogue": "卒業式の前の日の放課後、部室で読書会を開いた。"
+      },
+      {
+        "dialogue": "第二十六回。参加者二名。机の上に、文庫本が一冊とマグが二つ。"
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "では、読み手の方、どうぞ。"
+        }
+      },
+      {
+        "dialogue": "座り直した先輩を、初めて聞き手として見た。片足はストーブに向けたままだった。"
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "えっと。中島敦の『山月記』です。教科書に載っています。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "読んだことになっている人が、たぶん、いちばん多い本です。わたしも読んだことになっていました。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "虎になった男の話、ってことになってます。でも今日は、虎の話はあまりしません。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "虎に会った友達の話をします。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "袁傪は、李徴と同じ年に試験に受かった人です。友達の少なかった李徴の、いちばん親しい友達だったと書いてあります。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "山道で虎に襲われかけて、草むらから声がして、その声で友達だと気づきます。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "ふつう、逃げますよね。この人、逃げないんです。馬から下りて、草むらに近づいて、話しかけます。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "話の九割は、李徴がしゃべってます。でも、最後まで聞いた人がいないと、この話はないんです。"
+        }
+      },
+      {
+        "dialogue": "途中で二回、声が裏返った。"
+      },
+      {
+        "dialogue": "李徴の言葉を読んで、それから袁傪が書きとらせる場面を読んだ。"
+      },
+      {
+        "dialogue": "「何処か（非常に微妙な点に於て）欠けるところがあるのではないか」のところで、顔を上げた。"
+      },
+      {
+        "dialogue": "先輩は、笑っていなかった。聞く目をしていた。"
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "袁傪は、全部書きとらせるんです。足りないと思いながら。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "褒めて帰ったら、李徴はいい気持ちで虎に戻れたかもしれない。黙って帰ったら、詩はなくなった。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "この人はどっちもしないで、持って帰ります。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "読むって、好きとか嫌いとかの前に、相手のものを落とさないで持って帰ることなのかもしれません。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "だから、袁傪が出てくるところだけ、もう一回読んでみてください。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "以上です。"
+        }
+      },
+      {
+        "dialogue": "部屋が静かになった。ストーブの音だけがした。"
+      },
+      {
+        "dialogue": "先輩はマグを両手で持ったまま、しばらく何も言わなかった。"
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "感想、言っちゃだめなんだよね。この会。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "先輩が決めたんです。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_grin"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_grin]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "うん。じゃあ言わない。ノートに書いとく。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "sound",
+            "operationType": "stop",
+            "alias": "bgm_day",
+            "$origin": "stop sound bgm_day"
+          }
+        ]
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "sound",
+            "operationType": "play",
+            "alias": "bgm_night",
+            "url": "bgm_night",
+            "props": {
+              "channel": "bgm",
+              "loop": true
+            },
+            "$origin": "play sound bgm_night channel bgm loop true"
+          }
+        ]
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "image",
+            "operationType": "show",
+            "alias": "bg",
+            "url": "bg_clubroom_dusk",
+            "transition": {
+              "type": "fade"
+            },
+            "$origin": "show image bg bg_clubroom_dusk with fade"
+          }
+        ]
+      },
+      {
+        "dialogue": "先輩は鞄から茶封筒を出して、机に置いた。角が柔らかくなっている。"
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "読書会には、もう一つ決まりがあってね。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "聞いてないです。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "今作ったからね。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_concern"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_concern]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "読み手は最後に、渡されたものを読む。"
+        }
+      },
+      {
+        "dialogue": "封筒の中身は、手書きの原稿用紙だった。六十枚くらい。"
+      },
+      {
+        "dialogue": "一枚目の真ん中に題があった。『渡し守』。その下に、先輩の名前。"
+      },
+      {
+        "dialogue": "三十枚目のあたりで、インクの色が変わっている。"
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "三十号に載るはずだったやつ。半分で止まったやつね。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "二年の春に、残りを一人で書いて終わらせた。終わらせてから、書くのをやめた。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "誰にも見せてない。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "三十号の目次、見ました。次号に掲載します、って。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_grin"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_grin]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "見たか。さすが読む人。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_concern"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_concern]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "わたしね、読む方を選んで、書く方を置いてきたんだと思ってたの。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "きみの二十分を聞いてたら、違うかもしれないと思った。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "置いてきたのは、読まれる方だった。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "去年の読書会で泣いたのは、それですか。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "途中で終わってるのに百年読まれてる、って聞いてね。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "わたしのは終わってるのに、誰にも読まれてない。あれはきつかった。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "……今、読むんですか。ここで。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "声に出して。聞き手はわたし。第二十六回の、最後の本だから。"
+        }
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_grin"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_grin]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "怖いから、早くして。"
+        }
+      },
+      {
+        "dialogue": "読んだ。"
+      },
+      {
+        "dialogue": "川の渡し守の話だった。両岸の町のどちらにも家を持たない男が、毎日、人を向こうへ運ぶ。"
+      },
+      {
+        "dialogue": "「向こう岸に着くたびに、男は一度だけ、こちらの岸を見た。」"
+      },
+      {
+        "dialogue": "「客は誰も、舟の上で男の顔を見なかった。みんな、行く先の岸を見ていた。」"
+      },
+      {
+        "dialogue": "「ある朝、女が一人、どちらの岸でも降りないと言った。」"
+      },
+      {
+        "dialogue": "女は川の真ん中で、櫂を貸してくれと言う。男は貸さない。次の日も、女は来る。"
+      },
+      {
+        "dialogue": "前半は少し気取っていて、形容詞が多くて、一年生の字だった。"
+      },
+      {
+        "dialogue": "後半は字が落ち着いて、言葉が減って、急に上手くなった。"
+      },
+      {
+        "dialogue": "「男は櫂を渡した。舟が回った。それだけのことに、四十年かかった。」"
+      },
+      {
+        "dialogue": "読んでいるあいだ、先輩は窓の方を向いていた。"
+      },
+      {
+        "dialogue": "途中で、耳が赤くなっているのが見えた。見なかったことにした。"
+      },
+      {
+        "dialogue": "一時間半かかった。お茶は完全に冷めていた。"
+      },
+      {
+        "dialogue": "最後の一枚を、机に置いた。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_neutral"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_neutral]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "……はい、読まれました。どうも。"
+        }
+      },
+      {
+        "dialogue": "先輩の声は、少し高かった。"
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "で、どうだった。感想禁止は解除ね。今だけ。"
+        }
+      },
+      {
+        "dialogue": "何か言わなくてはいけなかった。"
+      },
+      {
+        "dialogue": "いいお話でした、と言うのがいちばん簡単だった。先輩は明日、卒業する。"
+      },
+      {
+        "dialogue": "袁傪のことを考えた。"
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "すごく、よかったです。後半、特に。川の音がするみたいで。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "でも。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "でも？"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "最後の二枚、急いでます。"
+        }
+      },
+      {
+        "dialogue": "部屋の音が、全部止まった気がした。"
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "渡し守が岸に上がるところ、もっと見たかったです。早く終わらせたかったんじゃないかって、思いました。"
+        }
+      },
+      {
+        "dialogue": "言ってから、手が冷たくなった。"
+      },
+      {
+        "dialogue": "先輩は窓の方を向いたまま、動かなかった。"
+      },
+      {
+        "dialogue": "それから肩が小さく揺れて、笑っているのだと、少し遅れてわかった。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_grin"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_grin]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "二年前のわたしに聞かせたいな、それ。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "うん。急いだ。早く終わらせて、やめたかったからね。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "すみません。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "謝らないの。いちばん聞きたかったやつだから。"
+        }
+      },
+      {
+        "dialogue": "先輩は原稿を揃えて封筒に戻して、それをわたしの方へ押した。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_smile"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_smile]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "持ってって。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "え。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "読む人は、受け取ったものを誰かに渡す人でしょ。いつか渡して。渡さなくてもいいけど、落とさないで。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "mc",
+          "text": "……部誌は、もうないですよ。"
+        }
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "そうだね。だから、きみが読んで、きみが持ってる。"
+        }
+      },
+      {
+        "dialogue": "封筒は、文庫本よりずっと重かった。"
+      },
+      {
+        "dialogue": "先輩は欠けたマグを手に取って、空なのを確かめて、置いた。"
+      },
+      {
+        "dialogue": "明日、先輩はこの部屋に来なくなる。"
+      },
+      {
+        "dialogue": "窓の方を向いて、先輩が小さく息をついた。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "show",
+            "alias": "senpai",
+            "urls": [
+              "senpai_smile"
+            ],
+            "$origin": "show imagecontainer senpai [senpai_smile]"
+          }
+        ]
+      },
+      {
+        "dialogue": {
+          "character": "senpai",
+          "text": "読まれちゃったな、とうとう。"
+        }
+      },
+      {
+        "labelToOpen": {
+          "label": "ending_read",
+          "type": "jump"
+        }
+      }
+    ],
+    "ending_read": [
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "imagecontainer",
+            "operationType": "remove",
+            "alias": "senpai",
+            "$origin": "remove imagecontainer senpai"
+          }
+        ]
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "image",
+            "operationType": "show",
+            "alias": "bg",
+            "url": "bg_hallway",
+            "transition": {
+              "type": "fade"
+            },
+            "$origin": "show image bg bg_hallway with fade"
+          }
+        ]
+      },
+      {
+        "dialogue": "四月の、最初の放課後。"
+      },
+      {
+        "dialogue": "部室の椅子は、一人に四つ余るようになった。"
+      },
+      {
+        "dialogue": "二十六冊目のノートの最後の頁に、先輩の字が一行だけある。卒業式の朝に書いたらしい。"
+      },
+      {
+        "dialogue": "「第二十六回。読み手、途中でなし。」"
+      },
+      {
+        "dialogue": "三月の葉書には、わたしの字で返事を出した。"
+      },
+      {
+        "dialogue": "「山月記を読みました。袁傪が出てくるところを、もう一回読んでみてください。」"
+      },
+      {
+        "dialogue": "廊下の掲示板は、新入生向けの紙で埋まりかけている。"
+      },
+      {
+        "goNextStep": true,
+        "operations": [
+          {
+            "type": "image",
+            "operationType": "show",
+            "alias": "bg",
+            "url": "bg_board_read_end",
+            "transition": {
+              "type": "fade"
+            },
+            "$origin": "show image bg bg_board_read_end with fade"
+          }
+        ]
+      },
+      {
+        "dialogue": "その端に、紙が一枚、残っている。"
+      },
+      {
+        "dialogue": "「部誌に書く人」。"
+      },
+      {
+        "dialogue": "下線の上は、空いたままだ。誰も来なかったし、先輩は剥がさずに卒業した。"
+      },
+      {
+        "dialogue": "部誌は、三十一号で終わった。"
+      },
+      {
+        "dialogue": "紙は少し日に焼けて、もう、あの日の白さではなかった。"
+      },
+      {
+        "dialogue": "あの日この前に立って、何かいい一行を思いついた気がする。"
+      },
+      {
+        "dialogue": "書き留めなかった。どんな一行だったか、もう思い出せない。"
+      },
+      {
+        "dialogue": "紐の先で、鉛筆が少しだけ揺れていた。"
+      },
+      {
+        "dialogue": "わたしはその前を通り過ぎて、部室へ行く。読みかけが、一冊ある。"
+      },
+      {
+        "dialogue": "（エンド 2「読む人」）"
+      },
+      {
+        "dialogue": "『二枚の紙』"
+      },
+      {
+        "dialogue": "脚本は kent7k と Claude の共作です。Claude は Anthropic の AI です。"
+      },
+      {
+        "dialogue": "絵は画像生成 AI（OpenAI の gpt-image-2）で作りました。音楽は Claude がコードで書いて合成しました。"
+      },
+      {
+        "dialogue": "引用は中島敦『山月記』です（青空文庫）。掲示板の字は Zen Kurenaido です。"
+      },
+      {
+        "dialogue": "エンジンは Pixi’VN。ソースは github.com/kent7k/erabu-vn にあります（GPL-3.0）。"
+      },
+      {
+        "end": "game_end"
+      }
+    ]
+  }
+}

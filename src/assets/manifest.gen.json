@@ -1,0 +1,232 @@
+{
+  "bundles": [
+    {
+      "name": "audio",
+      "assets": [
+        {
+          "alias": [
+            "audio_bgm_day",
+            "bgm_day"
+          ],
+          "src": [
+            "audio/bgm_day-Qtnfrg.mp3",
+            "audio/bgm_day-hoD0Aw.ogg"
+          ],
+          "data": {
+            "tags": {}
+          }
+        },
+        {
+          "alias": [
+            "audio_bgm_night",
+            "bgm_night"
+          ],
+          "src": [
+            "audio/bgm_night-yR6N3w.mp3",
+            "audio/bgm_night-gjaOWQ.ogg"
+          ],
+          "data": {
+            "tags": {}
+          }
+        }
+      ]
+    },
+    {
+      "name": "bg",
+      "assets": [
+        {
+          "alias": [
+            "bg_bedroom",
+            "bedroom"
+          ],
+          "src": [
+            "bg/bedroom-E3NEdw.webp",
+            "bg/bedroom-6SAw7A.jpg"
+          ],
+          "data": {
+            "tags": {}
+          }
+        },
+        {
+          "alias": [
+            "bg_board_read_end",
+            "board_read_end"
+          ],
+          "src": [
+            "bg/board_read_end-ztq53A.webp",
+            "bg/board_read_end-oqDR_Q.jpg"
+          ],
+          "data": {
+            "tags": {}
+          }
+        },
+        {
+          "alias": [
+            "bg_board_two",
+            "board_two"
+          ],
+          "src": [
+            "bg/board_two-mxP8Dg.jpg",
+            "bg/board_two-0dfawQ.webp"
+          ],
+          "data": {
+            "tags": {}
+          }
+        },
+        {
+          "alias": [
+            "bg_board_two_dusk",
+            "board_two_dusk"
+          ],
+          "src": [
+            "bg/board_two_dusk-uqE8dA.webp",
+            "bg/board_two_dusk-qjlKGg.jpg"
+          ],
+          "data": {
+            "tags": {}
+          }
+        },
+        {
+          "alias": [
+            "bg_board_write_end",
+            "board_write_end"
+          ],
+          "src": [
+            "bg/board_write_end-Rfwzmg.jpg",
+            "bg/board_write_end-7hLtFg.webp"
+          ],
+          "data": {
+            "tags": {}
+          }
+        },
+        {
+          "alias": [
+            "bg_clubroom",
+            "clubroom"
+          ],
+          "src": [
+            "bg/clubroom-yjipRQ.jpg",
+            "bg/clubroom-bmCwKw.webp"
+          ],
+          "data": {
+            "tags": {}
+          }
+        },
+        {
+          "alias": [
+            "bg_clubroom_dusk",
+            "clubroom_dusk"
+          ],
+          "src": [
+            "bg/clubroom_dusk-WxxSbA.webp",
+            "bg/clubroom_dusk-59fbcw.jpg"
+          ],
+          "data": {
+            "tags": {}
+          }
+        },
+        {
+          "alias": [
+            "bg_hallway",
+            "hallway"
+          ],
+          "src": [
+            "bg/hallway-zetAnA.jpg",
+            "bg/hallway-srL9Cg.webp"
+          ],
+          "data": {
+            "tags": {}
+          }
+        },
+        {
+          "alias": [
+            "bg_hallway_dusk",
+            "hallway_dusk"
+          ],
+          "src": [
+            "bg/hallway_dusk-ZpUt9Q.jpg",
+            "bg/hallway_dusk-KqlMvw.webp"
+          ],
+          "data": {
+            "tags": {}
+          }
+        }
+      ]
+    },
+    {
+      "name": "images",
+      "assets": [
+        {
+          "alias": [
+            "images_main-menu",
+            "main-menu"
+          ],
+          "src": [
+            "images/main-menu-OaGNWQ.jpg",
+            "images/main-menu-9qrYbw.webp"
+          ],
+          "data": {
+            "tags": {}
+          }
+        }
+      ]
+    },
+    {
+      "name": "senpai",
+      "assets": [
+        {
+          "alias": [
+            "senpai_concern",
+            "concern"
+          ],
+          "src": [
+            "senpai/concern-bO2r4g.png",
+            "senpai/concern-5gfybQ.webp"
+          ],
+          "data": {
+            "tags": {}
+          }
+        },
+        {
+          "alias": [
+            "senpai_grin",
+            "grin"
+          ],
+          "src": [
+            "senpai/grin-0sgiJQ.png",
+            "senpai/grin-_ZxHXA.webp"
+          ],
+          "data": {
+            "tags": {}
+          }
+        },
+        {
+          "alias": [
+            "senpai_neutral",
+            "neutral"
+          ],
+          "src": [
+            "senpai/neutral-2tNPhg.png",
+            "senpai/neutral-_JgR1g.webp"
+          ],
+          "data": {
+            "tags": {}
+          }
+        },
+        {
+          "alias": [
+            "senpai_smile",
+            "smile"
+          ],
+          "src": [
+            "senpai/smile-STVawA.webp",
+            "senpai/smile-GE50ow.png"
+          ],
+          "data": {
+            "tags": {}
+          }
+        }
+      ]
+    }
+  ]
+}
