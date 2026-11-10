@@ -89,7 +89,21 @@ export default defineConfig(({ mode }) => ({
                 ],
             },
             workbox: {
+                // Images and audio are not precached (every resolution/format variant
+                // would be ~22 MB). Instead keep what the player actually loaded, so a
+                // replay works offline (R-09). File names are content-hashed, so
+                // CacheFirst cannot serve a stale file.
                 runtimeCaching: [
+                    {
+                        urlPattern: ({ url, sameOrigin }) =>
+                            sameOrigin && url.pathname.startsWith("/assets/"),
+                        handler: "CacheFirst",
+                        options: {
+                            cacheName: "game-assets-v1",
+                            cacheableResponse: { statuses: [200] },
+                            expiration: { maxEntries: 300 },
+                        },
+                    },
                     {
                         urlPattern: ({ url }) => CACHED_EXTERNAL_HOSTNAMES.includes(url.hostname),
                         handler: "CacheFirst",

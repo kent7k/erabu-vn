@@ -49,7 +49,8 @@ npm run build:itch          # itch.io の配布物 erabu-itch.zip（dist-itch/�
 - `dist-itch/` と `erabu-itch.zip` は ignore してある。itch の戻しは前の zip を上げ直すしかないので、出した zip は手元に控える
 - `vercel.json` の rewrite は素材の path にも効く。無い素材を引くと 404 でなく index.html（200）が返り、Pixi の読み込みが分かりにくい失敗をする（漏れは test が見る）
 - `vercel.json` に installCommand が無く、`package.json` に `"latest"` の依存が 9 個ある。Vercel の Install Command は `npm ci --include=optional` に固定する（R-10）
-- Service Worker は plugin の既定のまま登録される（`registerSW` を呼ぶコードは無い）。更新を出しても前の版が出続けうるので、確かめるときは全部のタブを閉じて開き直す（R-28）。precache に絵と音が入っているかは未確認（R-09）
+- Service Worker は plugin の既定のまま登録される（`registerSW` を呼ぶコードは無い）。更新を出しても前の版が出続けうるので、確かめるときは全部のタブを閉じて開き直す（R-28）。precache は JS・CSS・HTML・アイコンだけで、絵と音は入れていない（全部の解像度と形式を入れると約 22 MB）。代わりに `/assets/` を実行時に CacheFirst で控えるので、1 度読んだ絵と音はオフラインでも出る（R-09）
+- TanStack Query は既定（networkMode "online"）だとオフラインで再取得を止める。画面のデータは全部エンジンの手元の状態なので `src/App.tsx` で `"always"` にしてある。戻すとオフラインでクリックしても台詞が変わらなくなる
 - PWA の `start_url` は `/`。Vercel の根に置く前提で、サブパスに置くと合わない
 
 ## 出す前に
@@ -60,7 +61,7 @@ npm run build:itch          # itch.io の配布物 erabu-itch.zip（dist-itch/�
 - Q-03 ink を直したあと、古いセーブを戻すとどうなるか（手元の dev で試せる）
 - Q-11 出したあと、不具合の報告を誰がどこで受けるか
 
-ほかの未確認（Q-02・Q-09・Q-12 など）は [未確認の事項](docs/intelligence/99-evidence-and-questions.md#未確認の事項全部)。
+ほかの未確認（Q-02・Q-12 など。Q-09 は上の罠の precache の行で答えた）は [未確認の事項](docs/intelligence/99-evidence-and-questions.md#未確認の事項全部)。
 
 ### 確かめること（P4 の前に 1 回、そのあとは毎回）
 
@@ -78,14 +79,15 @@ npm run build:itch          # itch.io の配布物 erabu-itch.zip（dist-itch/�
 
 直した（2026-11-10）:
 
+- R-01 通信が切れるとゲームが止まる → 原因は 2 つあった。全画面の「オフライン」の表示と、TanStack Query がオフラインで画面のデータの取り直しを止めること（エンジンは進むのに台詞が変わらない）。表示は上に出る閉じられる帯にし、Query は `networkMode: "always"` にした。あわせて絵と音を実行時に控える（R-09）。build して preview で、オフラインに見せかけて（`navigator.onLine` と offline のイベント）帯が出て閉じられ、クリックで進むことと、2 回目の読み込みで絵と音が `game-assets-v1` に入ることを確かめた。本当に回線を切っての確認はまだ
+
 - R-02 オート送りが読み直すとオンに戻る → `=== "true"` で読む。クイックツールの切り替えも保存して設定画面とそろえた（`tests/auto-settings.test.ts`）
 - R-27 URL に知らない query が付くと進まない → Q-16 を手元の dev で確かめたら、`/?utm_source=x` から「はじめから」で 1 行目のまま止まり背景も出なかった（High だった）。store に入れる query を `settings`・`settings_tab`・`history`・`saves` の 4 つに絞った（`src/lib/stores/search-param-store.ts`・`tests/search-params.test.ts`）。直したあと、同じ URL で進むことと設定の開け閉めをブラウザで確かめた
 
-残りを直す順は R-01 → R-03・R-04 → R-11・R-10 → R-05 → R-12。Low の 19 件を含む全部は [リスクの台帳](docs/intelligence/70-reliability.md#リスクの台帳全部)。
+残りを直す順は R-03・R-04 → R-11・R-10 → R-05 → R-12。Low の 19 件を含む全部は [リスクの台帳](docs/intelligence/70-reliability.md#リスクの台帳全部)。
 
 | ID | 何が起きるか | 直し方の要旨 |
 |---|---|---|
-| R-01 | 通信が切れると、素材が手元にあっても全画面の「オフライン」でゲームを止める | 外すか、閉じられる toast にする（R-09 と一緒に決める） |
 | R-03 | `auto_exit_save` が壊れていると、`/` 以外の URL で開いたときにエラー画面。「つづきから」も押せない | parse を try で囲み、失敗したら鍵を消す |
 | R-04 | IndexedDB の失敗の経路で Promise が終わらない／例外が漏れる（保存中の toast が残る） | どの失敗でも reject して return。tx の onerror・onabort も扱う |
 | R-11 | CI が無く、test・lint・型の検査は手で走らせるだけ | push ごとに ci → test → check → build の workflow を 1 本足す |

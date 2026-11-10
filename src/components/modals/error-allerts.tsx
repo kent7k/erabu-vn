@@ -1,42 +1,45 @@
 import { Button } from "@/components/ui/button";
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card";
 import { useNetworkDetector } from "@/lib/hooks/network-hooks";
-import { RefreshCwIcon, WifiOffIcon } from "lucide-react";
+import { WifiOffIcon, XIcon } from "lucide-react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
+/**
+ * A small banner, not a full-screen block (R-01): the script is in the bundle and
+ * images/audio already loaded (or cached by the service worker) keep working offline,
+ * so the game should stay playable. The banner can be dismissed and comes back the
+ * next time the connection drops.
+ */
 export function OfflineAllert() {
     const { t } = useTranslation(["ui"]);
-    const { isOnline, retry } = useNetworkDetector();
+    const { isOnline } = useNetworkDetector();
+    const [dismissed, setDismissed] = useState(false);
 
-    if (isOnline) return null;
+    useEffect(() => {
+        if (isOnline) setDismissed(false);
+    }, [isOnline]);
+
+    if (isOnline || dismissed) return null;
 
     return (
-        <div className="fixed inset-0 z-[120] flex items-center justify-center bg-background/70 p-4 backdrop-blur-md animate-in fade-in-0">
-            <Card className="w-full max-w-md border-destructive/30 shadow-2xl">
-                <CardHeader className="items-center text-center">
-                    <div className="mb-2 inline-flex size-14 items-center justify-center rounded-2xl bg-destructive/10 text-destructive">
-                        <WifiOffIcon className="size-7" />
-                    </div>
-                    <CardTitle>{t("offline_title")}</CardTitle>
-                    <CardDescription>{t("offline_description")}</CardDescription>
-                </CardHeader>
-                <CardContent className="flex flex-col items-center gap-2 text-sm text-muted-foreground">
-                    <div>{t("offline_hint")}</div>
-                </CardContent>
-                <CardFooter className="justify-center">
-                    <Button variant="outline" onClick={retry} aria-label={t("offline_retry")}>
-                        <RefreshCwIcon className="size-4" />
-                        {t("offline_retry")}
-                    </Button>
-                </CardFooter>
-            </Card>
+        <div
+            role="status"
+            data-slot="card"
+            className="fixed top-3 left-1/2 z-[120] flex max-w-[calc(100%-2rem)] -translate-x-1/2 items-center gap-3 rounded-xl border border-destructive/30 bg-background/90 py-2 pr-2 pl-4 text-sm shadow-lg backdrop-blur-md animate-in fade-in-0"
+        >
+            <WifiOffIcon className="size-4 shrink-0 text-destructive" />
+            <div className="min-w-0">
+                <div className="font-medium">{t("offline_title")}</div>
+                <div className="text-xs text-muted-foreground">{t("offline_description")}</div>
+            </div>
+            <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setDismissed(true)}
+                aria-label={t("offline_dismiss")}
+            >
+                <XIcon className="size-4" />
+            </Button>
         </div>
     );
 }

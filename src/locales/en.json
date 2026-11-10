@@ -183,9 +183,7 @@
     "language_description": "Choose the display language. When the language matches your browser setting, it is marked as \"(system)\".",
     "system": "System",
     "offline_title": "No internet connection",
-    "offline_description": "The game is paused until a stable connection is available again.",
-    "offline_checking": "Checking connection…",
-    "offline_hint": "Check your network and try again.",
-    "offline_retry": "Retry now"
+    "offline_description": "Images and sounds not loaded yet may be missing until you reconnect. You can keep reading.",
+    "offline_dismiss": "Dismiss"
   }
 }

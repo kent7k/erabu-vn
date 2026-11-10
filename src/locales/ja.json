@@ -183,9 +183,7 @@
     "language_description": "表示の言語を選びます。ブラウザの設定と同じ言語には「(システム)」と付きます。",
     "system": "システム",
     "offline_title": "インターネットに繋がっていません",
-    "offline_description": "接続が戻るまでゲームを止めています。",
-    "offline_checking": "接続を確かめています…",
-    "offline_hint": "ネットワークを確かめて、もう一度試してください。",
-    "offline_retry": "もう一度試す"
+    "offline_description": "まだ読み込んでいない絵と音は、繋がるまで出ないことがあります。読み進めることはできます。",
+    "offline_dismiss": "閉じる"
   }
 }
