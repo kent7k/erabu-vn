@@ -11,9 +11,12 @@ type AutoSettingsStore = {
     time: number;
 };
 
+const ENABLED_KEY = "auto_forward_enabled";
+
 export namespace AutoSettings {
     export const store = new Store<AutoSettingsStore>({
-        enabled: Boolean(localStorage.getItem("auto_forward_enabled") ?? false),
+        // Stored as "true"/"false"; Boolean("false") would be true (R-02).
+        enabled: localStorage.getItem(ENABLED_KEY) === "true",
         time: Number(localStorage.getItem("auto_forward_second") ?? 1),
     });
 
@@ -21,16 +24,15 @@ export namespace AutoSettings {
      * Toggle the auto forward state
      */
     export function toggleEnabled() {
-        store.setState((state) => {
-            localStorage.setItem("auto_forward_enabled", (!state.enabled).toString());
-            return { ...state, enabled: !state.enabled };
-        });
+        setEnabled(!store.state.enabled);
     }
 
     /**
-     * Set the auto forward state
+     * Set the auto forward state. Persisted like the settings switch, so the
+     * quick-tools toggle and the settings screen agree after a reload.
      */
     export function setEnabled(value: boolean) {
+        localStorage.setItem(ENABLED_KEY, value.toString());
         store.setState((state) => ({ ...state, enabled: value }));
     }
 

@@ -15,7 +15,7 @@ Node は 22.12 以上（vite 8・vitest 5 の engines の下限。repo では版
 ```bash
 npm ci --include=optional   # lockfile は Win/Linux/Mac の optional を保ったまま（prebuild の sharp もこれで入る）
 npm run dev                 # http://localhost:5173
-npm test                    # 脚本の網羅（tests/story.test.ts）
+npm test                    # 脚本の網羅（tests/story.test.ts）と設定の保存（tests/auto-settings.test.ts）
 npm run check               # biome（lint＋format の検査）
 npm run build               # prebuild（アイコン）→ tsc -b → vite build（dist/・base は /・経路は history・PWA あり）
 npm run preview             # vite build だけ（tsc なし）→ vite preview
@@ -75,13 +75,14 @@ npm run build:itch          # itch.io の配布物 erabu-itch.zip（dist-itch/�
 
 手順と戻し方は [RB-05](docs/intelligence/90-runbooks.md#rb-05-リリースと戻しvercelitch)。
 
-## 既知の課題（Medium・2026-11-10 に HEAD でどれも未修正を確かめた）
+## 既知の課題（Medium・2026-11-10 に HEAD で確かめた）
 
-直す順は R-02 → R-27・R-01 → R-03・R-04 → R-11・R-10 → R-05 → R-12。Low の 19 件を含む全部は [リスクの台帳](docs/intelligence/70-reliability.md#リスクの台帳全部)。
+直した: R-02（オート送りが読み直すとオンに戻る）は 2026-11-10 に直した（`tests/auto-settings.test.ts`）。クイックツールの切り替えも保存するようにして、設定画面とそろえた。
+
+残りを直す順は R-27・R-01 → R-03・R-04 → R-11・R-10 → R-05 → R-12。Low の 19 件を含む全部は [リスクの台帳](docs/intelligence/70-reliability.md#リスクの台帳全部)。
 
 | ID | 何が起きるか | 直し方の要旨 |
 |---|---|---|
-| R-02 | オート送りを設定画面で切っても、読み直すとオンに戻る（`Boolean("false")`） | `getItem(...) === "true"` で戻す。クイックツールの切り替えも保存してそろえる |
 | R-27 | URL に知らない query（utm_source など）が付くと、メニューが開いていると見なされて進まない恐れ（Inferred） | `validateSearch` で settings・settings_tab・history・saves だけを通す |
 | R-01 | 通信が切れると、素材が手元にあっても全画面の「オフライン」でゲームを止める | 外すか、閉じられる toast にする（R-09 と一緒に決める） |
 | R-03 | `auto_exit_save` が壊れていると、`/` 以外の URL で開いたときにエラー画面。「つづきから」も押せない | parse を try で囲み、失敗したら鍵を消す |
