@@ -15,7 +15,7 @@ Node は 22.12 以上（vite 8・vitest 5 の engines の下限。repo では版
 ```bash
 npm ci --include=optional   # lockfile は Win/Linux/Mac の optional を保ったまま（prebuild の sharp もこれで入る）
 npm run dev                 # http://localhost:5173
-npm test                    # 脚本の網羅（tests/story.test.ts）と設定の保存（tests/auto-settings.test.ts）
+npm test                    # 脚本の網羅（tests/story.test.ts）と、設定の保存・URL の query の小さな test
 npm run check               # biome（lint＋format の検査）
 npm run build               # prebuild（アイコン）→ tsc -b → vite build（dist/・base は /・経路は history・PWA あり）
 npm run preview             # vite build だけ（tsc なし）→ vite preview
@@ -59,7 +59,6 @@ npm run build:itch          # itch.io の配布物 erabu-itch.zip（dist-itch/�
 - Q-01 Vercel の本番のプロジェクト（URL・ドメイン・Build／Install Command・Node の版）
 - Q-03 ink を直したあと、古いセーブを戻すとどうなるか（手元の dev で試せる）
 - Q-11 出したあと、不具合の報告を誰がどこで受けるか
-- Q-16 `/?utm_source=x` で開いて、はじめから → クリックで進めるか（告知の link に直撃する。進めなければ R-27 は High）
 
 ほかの未確認（Q-02・Q-09・Q-12 など）は [未確認の事項](docs/intelligence/99-evidence-and-questions.md#未確認の事項全部)。
 
@@ -77,13 +76,15 @@ npm run build:itch          # itch.io の配布物 erabu-itch.zip（dist-itch/�
 
 ## 既知の課題（Medium・2026-11-10 に HEAD で確かめた）
 
-直した: R-02（オート送りが読み直すとオンに戻る）は 2026-11-10 に直した（`tests/auto-settings.test.ts`）。クイックツールの切り替えも保存するようにして、設定画面とそろえた。
+直した（2026-11-10）:
 
-残りを直す順は R-27・R-01 → R-03・R-04 → R-11・R-10 → R-05 → R-12。Low の 19 件を含む全部は [リスクの台帳](docs/intelligence/70-reliability.md#リスクの台帳全部)。
+- R-02 オート送りが読み直すとオンに戻る → `=== "true"` で読む。クイックツールの切り替えも保存して設定画面とそろえた（`tests/auto-settings.test.ts`）
+- R-27 URL に知らない query が付くと進まない → Q-16 を手元の dev で確かめたら、`/?utm_source=x` から「はじめから」で 1 行目のまま止まり背景も出なかった（High だった）。store に入れる query を `settings`・`settings_tab`・`history`・`saves` の 4 つに絞った（`src/lib/stores/search-param-store.ts`・`tests/search-params.test.ts`）。直したあと、同じ URL で進むことと設定の開け閉めをブラウザで確かめた
+
+残りを直す順は R-01 → R-03・R-04 → R-11・R-10 → R-05 → R-12。Low の 19 件を含む全部は [リスクの台帳](docs/intelligence/70-reliability.md#リスクの台帳全部)。
 
 | ID | 何が起きるか | 直し方の要旨 |
 |---|---|---|
-| R-27 | URL に知らない query（utm_source など）が付くと、メニューが開いていると見なされて進まない恐れ（Inferred） | `validateSearch` で settings・settings_tab・history・saves だけを通す |
 | R-01 | 通信が切れると、素材が手元にあっても全画面の「オフライン」でゲームを止める | 外すか、閉じられる toast にする（R-09 と一緒に決める） |
 | R-03 | `auto_exit_save` が壊れていると、`/` 以外の URL で開いたときにエラー画面。「つづきから」も押せない | parse を try で囲み、失敗したら鍵を消す |
 | R-04 | IndexedDB の失敗の経路で Promise が終わらない／例外が漏れる（保存中の toast が残る） | どの失敗でも reject して return。tx の onerror・onabort も扱う |
